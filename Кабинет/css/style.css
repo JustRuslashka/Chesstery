@@ -209,6 +209,10 @@ body {
   margin: 2px 0px 0px 0px;
   background-image: url(../img/...);
 }
+.my-pupil__bottom-on-click {
+  width: 100%;
+  margin: 0px 31px 0px 0px;
+}
 .my-pupil__bottom-right {
   margin: 0px 0px 0px 30px;
   width: 100%;
@@ -226,7 +230,7 @@ body {
   font-weight: 700;
 }
 .my-pupil__bottom-right:focus {
-  border: none;
+  border: 0px dashed #AEAEAE;
 }
 .my-pupil__bottom-right__all-your-pupils {
   display: -webkit-box;
@@ -243,7 +247,7 @@ body {
   margin: 0px 0px 0px 16.22px;
 }
 
-#b {
+.background {
   position: fixed;
   top: 0;
   left: 0;
@@ -254,25 +258,42 @@ body {
   z-index: 1;
 }
 
-#a {
+.modal-first {
   z-index: 3;
   position: absolute;
   left: 31.04%;
   right: 28.62%;
   top: 29.69%;
   bottom: 33.85%;
+  width: 551px;
+  height: 280px;
   display: none;
   background: #F5E6FE;
   border-radius: 15px;
+  padding: 23px 0px 17.23px 0px;
 }
-
-a.pages {
+.modal-first__label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+.modal-first__line {
+  width: 100%;
+  border-top: 1px solid #FFFFFF;
+  margin: 0px 0px 32px 0px;
+}
+.modal-first__exit {
   color: #FF2500;
   width: 22px;
   height: 22px;
   background: #FFB6AA;
+  border-radius: 5px;
+  padding: 4px 6px 6px 6px;
+  margin: -30px 24px 0px 0px;
 }
-a.pages:hover {
+.modal-first__exit:hover {
   color: #FFB6AA;
   background: #FF2500;
 }
