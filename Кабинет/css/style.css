@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -77,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   height: 100%;
   min-height: 100vh;
+  font-weight: 800;
 }
 
 .my-pupil {
@@ -282,7 +283,11 @@ body {
 .modal-first__line {
   width: 100%;
   border-top: 1px solid #FFFFFF;
-  margin: 0px 0px 32px 0px;
+  position: absolute;
+  top: 61px;
+}
+.modal-first__line-2 {
+  top: 205px;
 }
 .modal-first__exit {
   color: #FF2500;
@@ -294,6 +299,234 @@ body {
   margin: -30px 24px 0px 0px;
 }
 .modal-first__exit:hover {
-  color: #FFB6AA;
-  background: #FF2500;
+  background: #f59181;
+}
+.modal-first__content {
+  margin: 32px 0px 0px 0px;
+  padding: 0px 46px 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal-first__call-pupil {
+  margin: 0px 0px 21px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-first__call-pupil__text {
+  width: 143px;
+  height: 20px;
+}
+.modal-first__call-pupil__input {
+  width: 328px;
+  height: 31px;
+  padding: 5px 0px 6px 13px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.modal-first__write-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-first__write-email__text {
+  width: 143px;
+  height: 40px;
+  line-height: 20px;
+}
+.modal-first__write-email__input {
+  width: 328px;
+  height: 31px;
+  padding: 5px 0px 6px 13px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.modal-first__btn {
+  margin: 40px 0px 0px 131px;
+  width: 286px;
+  height: 40px;
+  color: #FFFFFF;
+  background: #235390;
+  border-radius: 10px;
+  line-height: 20px;
+}
+.modal-first__btn:active .modal-first__content {
+  display: none;
+}
+
+.schedule {
+  padding: 16px 30.19px 56px 30px;
+  margin: 17px 30px 21px 30px;
+  -webkit-box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  height: 1134px;
+}
+.schedule__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.schedule__header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.schedule__header__left-schedule {
+  margin: 0px 15px 0px 0px;
+}
+.schedule__line {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-bottom: 0px solid #F7F7F7;
+  margin: 0px 0px 20px 0px;
+}
+.schedule__line-pupils {
+  width: 61px;
+  border-bottom: 2px solid #235390;
+  margin: -2px 0px 0px 1px;
+}
+.schedule__line-groups {
+  width: 55px;
+  border-bottom: 2px solid #C200AF;
+  margin: -2px 0px 0px 83px;
+  display: none;
+}
+.schedule__content {
+  margin: 22px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+.schedule__days {
+  height: 73px;
+  background: #F1FCFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 0px 62.13px;
+}
+.schedule__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 16px 0px 0px 10px;
+  height: 100%;
+}
+.schedule__time-8, .schedule__time-9, .schedule__time-10, .schedule__time-11, .schedule__time-12, .schedule__time-13, .schedule__time-14, .schedule__time-15, .schedule__time-16, .schedule__time-17, .schedule__time-18, .schedule__time-19, .schedule__time-20, .schedule__time-21 {
+  height: 50px;
+  width: 62.13px;
+  border: 1px solid black;
+  margin: 0px 0px 1px 0px;
+}
+.schedule__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  height: 1015px;
+  margin: -1080px 0px 0px 71.13px;
+  background-color: #AEAEAE;
+  text-align: center;
+}
+.schedule__grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.schedule__grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.schedule__grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.schedule__grid > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+.schedule__grid > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.schedule__grid > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+}
+.schedule__grid > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.schedule__grid-3 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-4 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-5 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-6 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-7 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-8 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-9 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-10 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-11 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-12 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-13 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-14 {
+  border-bottom: 1px solid #E2E2E2;
 }
