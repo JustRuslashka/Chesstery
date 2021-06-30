@@ -1,0 +1,487 @@
+@import "nulled.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+
+body{
+    height: 100%;
+    min-height: 100vh;
+    font-weight: 800;
+}
+
+//Мои ученики
+.my-pupil {
+    padding: 21px 31px 29px 30px;
+    margin: 20px 30px 21px 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+
+		&__top {
+
+		}
+
+		&__label {
+            margin: 0px 0px 19px 0px;
+            font-weight: 800;
+            font-size: 29px;
+            line-height: 40px;
+		}
+
+		&__menu {
+            display: flex;
+            margin: 0px 0px 5px 0px;
+		}
+
+		&__pupils {
+            margin: 0px 20px 0px 0px;
+            color: #235390;
+		}
+
+		&__groups {
+            color: #C200AF;
+		}
+
+		&__line {
+            width: 100%;
+            background-color: #F6F6F6;
+            border-bottom: 0px solid #F7F7F7;
+            margin: 0px 0px 20px 0px;
+         
+            &-pupils{
+                width: 61px;
+                border-bottom: 2px solid #235390;
+                margin: -2px 0px 0px 1px;
+            }
+
+            &-groups{
+                width: 55px;
+                border-bottom: 2px solid #C200AF;
+                margin: -2px 0px 0px 83px;
+            }
+		}
+
+		&__bottom {
+            display: flex;
+            justify-content: space-between;
+
+            &-left {
+                &__add-pupil{
+                    width: 184px;
+                    height: 43px;
+                    border: 2px solid #235390;
+                    border-radius: 10px;
+                    color: #235390;
+                    display: flex;
+                    align-items: center;
+                    margin: 0px 0px 14px 0px;
+                    
+                    &-circle{
+                        width: 25px;
+                        height: 25px;
+                        background: #235390;
+                        border-radius: 50%;
+                        margin: 0px 5px 0px 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    &-plus{
+                        background-image: url(../img/...);
+                    }
+
+                    &-text{
+
+                    }
+                }
+
+                &__add-group{
+                    width: 184px;
+                    height: 43px;
+                    border: 2px solid #C200AF;
+                    border-radius: 10px;
+                    color:#C200AF;
+                    display: flex;
+                    align-items: center;
+                   
+                    &-circle{
+                        width: 25px;
+                        height: 25px;
+                        background: #C200AF;
+                        border-radius: 50%;
+                        margin: 0px 5px 0px 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    &-plus{
+                        margin: 2px 0px 0px 0px;
+                        background-image: url(../img/...);
+                    }
+
+                    &-text{
+                
+                    }
+                }
+            }
+    
+            &-on-click{
+                width: 100%;
+                margin: 0px 31px 0px 0px;
+            }
+
+            &-right {
+                margin: 0px 0px 0px 30px;
+                width: 100%;
+                height: 100px;
+                border: 3px dashed #AEAEAE;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                color: #AEAEAE;
+                font-size: 20px;
+                font-weight: 700;
+
+                &__all-your-pupils{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &__add-your-first-pupil{
+                    margin: 0px 0px 0px 16.22px;
+                }
+                
+            }
+		}
+}
+
+//затемнение экрана при выботе "Добавьте своего первого ученика"
+.background {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:none;
+    background: rgba(255, 255, 255, 0.75);
+    z-index:1;
+}
+
+//первое модальное окно : "Выберите, кого добавить в ученики"  
+.modal-first{
+    z-index:3;
+    position: absolute;
+    left: 31.04%;
+    right: 28.62%;
+    top: 29.69%;
+    bottom: 33.85%;
+    width: 551px;
+    height: 280px;
+    display:none;
+    background: #F5E6FE;
+    border-radius: 15px;   
+    padding: 23px 0px 17.23px 0px;
+
+    &__label{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__line{
+        width: 100%;  
+        border-top: 1px solid #FFFFFF; 
+        position: absolute;
+        top: 61px;
+     
+
+        &-2{
+            top: 205px;
+        }
+    }
+
+    &__exit{
+        color: #FF2500;
+        width: 22px;
+        height: 22px;
+        background: #FFB6AA;
+        border-radius: 5px;
+        padding: 4px 6px 6px 6px;
+        margin: -30px 24px 0px 0px;
+
+        &:hover{
+            background: #f59181; //СПРОСИТЬ КАКОЕ ДЕЙСТВИЕ ПРИ НАЖАТИИ
+        }
+    }
+
+    &__content {
+        margin: 32px 0px 0px 0px; 
+        padding: 0px 46px 0px 25px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__call-pupil {
+        margin: 0px 0px 21px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text{
+            width: 143px;
+            height: 20px;
+        }
+
+        &__input{
+            width: 328px;
+            height: 31px;
+            padding: 5px 0px 6px 13px;
+            font-weight: 400;
+            border-radius: 5px;
+        }
+    }
+
+    &__write-email {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+
+        &__text{
+            width: 143px;
+            height: 40px;
+            line-height: 20px;
+        }
+
+        &__input{
+            width: 328px;
+            height: 31px;
+            padding: 5px 0px 6px 13px;
+            font-weight: 400;
+            border-radius: 5px;
+        }
+    }
+
+    &__btn{
+        margin: 40px 0px 0px 131px;
+        width: 286px;
+        height: 40px; 
+        color: #FFFFFF;
+        background: #235390;
+        border-radius: 10px;
+        line-height: 20px;
+
+        &:active{
+            .modal-first__content{
+              display: none;
+            }
+          }
+    }
+}
+
+.schedule {
+    padding: 16px 30.19px 56px 30px;
+    margin: 17px 30px 21px 30px;
+    box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    height: 1134px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        
+        &__left{
+            display: flex;
+
+            &-schedule{
+                margin: 0px 15px 0px 0px;
+                color: #235390;
+            }
+
+            &-marks{
+                color: #C200AF;
+            }
+        }
+
+        //стилизация дней недели 
+        &__right{
+            
+            &-previous-week{
+
+            }
+
+            &-current-week{
+                
+            }
+
+            &-next-week{
+                
+            }
+        }
+    }
+
+    &__line {
+        width: 100%;
+        background-color: #F6F6F6;
+        border-bottom: 0px solid #F7F7F7;
+        margin: 5px 0px 20px 0px;
+     
+        &-schedule{
+            width: 85px;
+            border-bottom: 2px solid #235390;
+            margin: -2px 0px 0px 1px;  
+        }
+
+        &-marks{
+            width: 102px;
+            border-bottom: 2px solid #C200AF;
+            margin: -2px 0px 0px 103px;
+        }
+    }
+    
+    &__content {
+        margin: 22px 0px 0px 0px;
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+        border-radius: 20px;
+    }
+
+    &__days{
+        height: 73px;
+        background: #F1FCFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+        padding-left: 62.13px;
+    }
+
+    &__time{
+        display: flex;
+        flex-direction: column;
+        margin: -70px 0px 80px 0px;
+        padding: 70px 0px 0px 0px;
+        height: 100%;
+        width: 62.13px;
+        justify-content: space-around;
+        border-right: 1px solid #E2E2E2;
+
+        //стилизация времени проведения урока
+        &-8, &-9,&-10,&-11,&-12,&-13,&-14,&-15,&-16,&-17,&-18,&-19,&-20,&-21{
+            display: flex;
+            height: 50px;
+            height: 100%;
+            margin: 0px 0px 0px 0px;
+            border-bottom: 1px solid #E2E2E2;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            //убираем нижнее подчеркивание у последнего 
+            &:last-child{
+                border-bottom: none;
+                margin: 0px 0px -1px 0px;
+            }
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        height: 1015px;
+        margin: -1072px 0px 0px 61.13px;
+        padding: 0px 0px 23px 0px;
+        text-align: center;
+             
+      
+
+        &-1, &-2, &-3, &-4, &-5, &-6, &-7, &-8, &-9, &-10, &-11, &-12, &-13, &-14, &-15, &-16, &-17, &-18, &-19, &-20, &-21, &-22, &-23, &-24, &-25, &-26, &-27, &-28, &-29, &-30, &-31, &-32, &-33, &-34, &-35, &-36, &-37, &-38, &-39, &-40, &-41, &-42, &-43, &-44, &-45, &-46, &-47, &-48, &-49, &-50, &-51, &-52, &-53, &-54, &-55, &-56, &-57, &-58, &-59, &-60, &-61, &-62, &-63, &-64, &-65, &-66, &-67, &-68, &-69, &-70, &-71, &-72, &-73, &-74, &-75, &-76, &-77, &-78, &-79, &-80, &-81, &-82, &-83, &-84, &-85, &-86, &-87, &-88, &-89, &-90, &-91, &-92, &-93, &-94, &-95, &-96, &-97, &-98{
+            border-bottom: 1px solid #E2E2E2;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-top: 1px solid #ffffff;
+       
+
+            &-circle{
+                width: 20px;
+                height: 20px;
+                background: #235390;
+                border-radius: 50%;
+                margin: 0px 8px 0px 0px;
+                display: none;
+            }
+        
+            &-text{
+                display: none;
+            }
+
+            &:hover{
+                border: 2px dashed #235390;
+                height: 80%;
+                margin: -13px 0px -10px 0px;
+                width: 90%;
+                border-radius: 5px;
+                position: relative;
+                top: 29%;
+                left: 5%;
+                
+                .schedule__grid-1-circle{
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                  
+                }
+            
+                .schedule__grid-1-text{
+                    display: inline;
+                    color: #235390;
+                }
+               
+            }
+        }
+
+        &-92, &-93, &-94, &-95, &-96, &-97, &-98{
+            border: none;
+        }
+    }
+}
+
+.modal-second{
+    z-index:3;
+    position: absolute;
+    left: 31.04%;
+    right: 28.62%;
+    top: 29.69%;
+    bottom: 33.85%;
+    width: 551px;
+    height: 280px;
+    display:none;
+    background: #F5E6FE;
+    border-radius: 15px;   
+    padding: 23px 0px 17.23px 0px;
+
+    .schedule__grid-1{
+        
+        &:active{
+            display: none;
+        }
+    
+
+    }
+}
