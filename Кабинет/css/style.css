@@ -435,7 +435,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0px 0px 0px 62.13px;
+  margin: 0px 0px 0px 0px;
+  padding-left: 72.13px;
 }
 .schedule__time {
   display: -webkit-box;
@@ -446,7 +447,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: -73px 0px 80px 0px;
-  padding: 80px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
   height: 100%;
   width: 62.13px;
   -ms-flex-pack: distribute;
@@ -457,10 +458,23 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  border-bottom: 1px solid #E2E2E2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -30px 0px 0px 0px;
+}
+.schedule__time-8:last-child, .schedule__time-9:last-child, .schedule__time-10:last-child, .schedule__time-11:last-child, .schedule__time-12:last-child, .schedule__time-13:last-child, .schedule__time-14:last-child, .schedule__time-15:last-child, .schedule__time-16:last-child, .schedule__time-17:last-child, .schedule__time-18:last-child, .schedule__time-19:last-child, .schedule__time-20:last-child, .schedule__time-21:last-child {
+  border-bottom: 1px solid #ffffff;
 }
 .schedule__grid {
   display: -ms-grid;
@@ -470,7 +484,7 @@ body {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   height: 1015px;
-  margin: -1080px 0px 0px 71.13px;
+  margin: -1072px 0px 0px 61.13px;
   padding: 0px 0px 23px 0px;
   text-align: center;
 }
@@ -502,7 +516,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 7;
 }
-.schedule__grid-1 {
+.schedule__grid-1, .schedule__grid-2, .schedule__grid-3, .schedule__grid-4, .schedule__grid-5, .schedule__grid-6, .schedule__grid-7, .schedule__grid-8, .schedule__grid-9, .schedule__grid-10, .schedule__grid-11, .schedule__grid-12, .schedule__grid-13, .schedule__grid-14, .schedule__grid-15, .schedule__grid-16, .schedule__grid-17, .schedule__grid-18, .schedule__grid-19, .schedule__grid-20, .schedule__grid-21, .schedule__grid-22, .schedule__grid-23, .schedule__grid-24, .schedule__grid-25, .schedule__grid-26, .schedule__grid-27, .schedule__grid-28, .schedule__grid-29, .schedule__grid-30, .schedule__grid-31, .schedule__grid-32, .schedule__grid-33, .schedule__grid-34, .schedule__grid-35, .schedule__grid-36, .schedule__grid-37, .schedule__grid-38, .schedule__grid-39, .schedule__grid-40, .schedule__grid-41, .schedule__grid-42, .schedule__grid-43, .schedule__grid-44, .schedule__grid-45, .schedule__grid-46, .schedule__grid-47, .schedule__grid-48, .schedule__grid-49, .schedule__grid-50, .schedule__grid-51, .schedule__grid-52, .schedule__grid-53, .schedule__grid-54, .schedule__grid-55, .schedule__grid-56, .schedule__grid-57, .schedule__grid-58, .schedule__grid-59, .schedule__grid-60, .schedule__grid-61, .schedule__grid-62, .schedule__grid-63, .schedule__grid-64, .schedule__grid-65, .schedule__grid-66, .schedule__grid-67, .schedule__grid-68, .schedule__grid-69, .schedule__grid-70, .schedule__grid-71, .schedule__grid-72, .schedule__grid-73, .schedule__grid-74, .schedule__grid-75, .schedule__grid-76, .schedule__grid-77, .schedule__grid-78, .schedule__grid-79, .schedule__grid-80, .schedule__grid-81, .schedule__grid-82, .schedule__grid-83, .schedule__grid-84, .schedule__grid-85, .schedule__grid-86, .schedule__grid-87, .schedule__grid-88, .schedule__grid-89, .schedule__grid-90, .schedule__grid-91, .schedule__grid-92, .schedule__grid-93, .schedule__grid-94, .schedule__grid-95, .schedule__grid-96, .schedule__grid-97, .schedule__grid-98 {
   border-bottom: 1px solid #E2E2E2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,76 +527,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-top: 1px solid #ffffff;
 }
-.schedule__grid-2 {
-  border-bottom: 1px solid #E2E2E2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.schedule__grid-1:hover, .schedule__grid-2:hover, .schedule__grid-3:hover, .schedule__grid-4:hover, .schedule__grid-5:hover, .schedule__grid-6:hover, .schedule__grid-7:hover, .schedule__grid-8:hover, .schedule__grid-9:hover, .schedule__grid-10:hover, .schedule__grid-11:hover, .schedule__grid-12:hover, .schedule__grid-13:hover, .schedule__grid-14:hover, .schedule__grid-15:hover, .schedule__grid-16:hover, .schedule__grid-17:hover, .schedule__grid-18:hover, .schedule__grid-19:hover, .schedule__grid-20:hover, .schedule__grid-21:hover, .schedule__grid-22:hover, .schedule__grid-23:hover, .schedule__grid-24:hover, .schedule__grid-25:hover, .schedule__grid-26:hover, .schedule__grid-27:hover, .schedule__grid-28:hover, .schedule__grid-29:hover, .schedule__grid-30:hover, .schedule__grid-31:hover, .schedule__grid-32:hover, .schedule__grid-33:hover, .schedule__grid-34:hover, .schedule__grid-35:hover, .schedule__grid-36:hover, .schedule__grid-37:hover, .schedule__grid-38:hover, .schedule__grid-39:hover, .schedule__grid-40:hover, .schedule__grid-41:hover, .schedule__grid-42:hover, .schedule__grid-43:hover, .schedule__grid-44:hover, .schedule__grid-45:hover, .schedule__grid-46:hover, .schedule__grid-47:hover, .schedule__grid-48:hover, .schedule__grid-49:hover, .schedule__grid-50:hover, .schedule__grid-51:hover, .schedule__grid-52:hover, .schedule__grid-53:hover, .schedule__grid-54:hover, .schedule__grid-55:hover, .schedule__grid-56:hover, .schedule__grid-57:hover, .schedule__grid-58:hover, .schedule__grid-59:hover, .schedule__grid-60:hover, .schedule__grid-61:hover, .schedule__grid-62:hover, .schedule__grid-63:hover, .schedule__grid-64:hover, .schedule__grid-65:hover, .schedule__grid-66:hover, .schedule__grid-67:hover, .schedule__grid-68:hover, .schedule__grid-69:hover, .schedule__grid-70:hover, .schedule__grid-71:hover, .schedule__grid-72:hover, .schedule__grid-73:hover, .schedule__grid-74:hover, .schedule__grid-75:hover, .schedule__grid-76:hover, .schedule__grid-77:hover, .schedule__grid-78:hover, .schedule__grid-79:hover, .schedule__grid-80:hover, .schedule__grid-81:hover, .schedule__grid-82:hover, .schedule__grid-83:hover, .schedule__grid-84:hover, .schedule__grid-85:hover, .schedule__grid-86:hover, .schedule__grid-87:hover, .schedule__grid-88:hover, .schedule__grid-89:hover, .schedule__grid-90:hover, .schedule__grid-91:hover, .schedule__grid-92:hover, .schedule__grid-93:hover, .schedule__grid-94:hover, .schedule__grid-95:hover, .schedule__grid-96:hover, .schedule__grid-97:hover, .schedule__grid-98:hover {
+  border: 2px dashed #235390;
+  height: 90%;
+  margin: 4px 0px -10px 0px;
+  width: 90%;
+  border-radius: 5px;
+  position: relative;
+  left: 5%;
 }
-.schedule__grid-3 {
-  border-bottom: 1px solid #E2E2E2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.schedule__grid-4 {
-  border-bottom: 1px solid #E2E2E2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.schedule__grid-5 {
-  border-bottom: 1px solid #E2E2E2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.schedule__grid-6 {
-  border-bottom: 1px solid #E2E2E2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.schedule__grid-7 {
-  border-bottom: 1px solid #E2E2E2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.schedule__grid-1-1 {
+  display: none;
 }
