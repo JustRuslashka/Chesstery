@@ -116,9 +116,6 @@ body {
 .my-pupil__groups {
   color: #C200AF;
 }
-.my-pupil__groups:active + .my-pupil__line-pupils {
-  display: none;
-}
 .my-pupil__line {
   width: 100%;
   background-color: #F6F6F6;
@@ -134,7 +131,6 @@ body {
   width: 55px;
   border-bottom: 2px solid #C200AF;
   margin: -2px 0px 0px 83px;
-  display: none;
 }
 .my-pupil__bottom {
   display: -webkit-box;
@@ -229,9 +225,6 @@ body {
   color: #AEAEAE;
   font-size: 20px;
   font-weight: 700;
-}
-.my-pupil__bottom-right:focus {
-  border: 0px dashed #AEAEAE;
 }
 .my-pupil__bottom-right__all-your-pupils {
   display: -webkit-box;
@@ -397,23 +390,26 @@ body {
 }
 .schedule__header__left-schedule {
   margin: 0px 15px 0px 0px;
+  color: #235390;
+}
+.schedule__header__left-marks {
+  color: #C200AF;
 }
 .schedule__line {
   width: 100%;
   background-color: #F6F6F6;
   border-bottom: 0px solid #F7F7F7;
-  margin: 0px 0px 20px 0px;
+  margin: 5px 0px 20px 0px;
 }
-.schedule__line-pupils {
-  width: 61px;
+.schedule__line-schedule {
+  width: 85px;
   border-bottom: 2px solid #235390;
   margin: -2px 0px 0px 1px;
 }
-.schedule__line-groups {
-  width: 55px;
+.schedule__line-marks {
+  width: 102px;
   border-bottom: 2px solid #C200AF;
-  margin: -2px 0px 0px 83px;
-  display: none;
+  margin: -2px 0px 0px 103px;
 }
 .schedule__content {
   margin: 22px 0px 0px 0px;
@@ -436,7 +432,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px 0px 0px 0px;
-  padding-left: 72.13px;
+  padding-left: 62.13px;
 }
 .schedule__time {
   display: -webkit-box;
@@ -446,7 +442,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: -73px 0px 80px 0px;
+  margin: -70px 0px 80px 0px;
   padding: 70px 0px 0px 0px;
   height: 100%;
   width: 62.13px;
@@ -474,7 +470,8 @@ body {
           justify-content: center;
 }
 .schedule__time-8:last-child, .schedule__time-9:last-child, .schedule__time-10:last-child, .schedule__time-11:last-child, .schedule__time-12:last-child, .schedule__time-13:last-child, .schedule__time-14:last-child, .schedule__time-15:last-child, .schedule__time-16:last-child, .schedule__time-17:last-child, .schedule__time-18:last-child, .schedule__time-19:last-child, .schedule__time-20:last-child, .schedule__time-21:last-child {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: none;
+  margin: 0px 0px -1px 0px;
 }
 .schedule__grid {
   display: -ms-grid;
@@ -524,20 +521,61 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-top: 1px solid #ffffff;
+}
+.schedule__grid-1-circle, .schedule__grid-2-circle, .schedule__grid-3-circle, .schedule__grid-4-circle, .schedule__grid-5-circle, .schedule__grid-6-circle, .schedule__grid-7-circle, .schedule__grid-8-circle, .schedule__grid-9-circle, .schedule__grid-10-circle, .schedule__grid-11-circle, .schedule__grid-12-circle, .schedule__grid-13-circle, .schedule__grid-14-circle, .schedule__grid-15-circle, .schedule__grid-16-circle, .schedule__grid-17-circle, .schedule__grid-18-circle, .schedule__grid-19-circle, .schedule__grid-20-circle, .schedule__grid-21-circle, .schedule__grid-22-circle, .schedule__grid-23-circle, .schedule__grid-24-circle, .schedule__grid-25-circle, .schedule__grid-26-circle, .schedule__grid-27-circle, .schedule__grid-28-circle, .schedule__grid-29-circle, .schedule__grid-30-circle, .schedule__grid-31-circle, .schedule__grid-32-circle, .schedule__grid-33-circle, .schedule__grid-34-circle, .schedule__grid-35-circle, .schedule__grid-36-circle, .schedule__grid-37-circle, .schedule__grid-38-circle, .schedule__grid-39-circle, .schedule__grid-40-circle, .schedule__grid-41-circle, .schedule__grid-42-circle, .schedule__grid-43-circle, .schedule__grid-44-circle, .schedule__grid-45-circle, .schedule__grid-46-circle, .schedule__grid-47-circle, .schedule__grid-48-circle, .schedule__grid-49-circle, .schedule__grid-50-circle, .schedule__grid-51-circle, .schedule__grid-52-circle, .schedule__grid-53-circle, .schedule__grid-54-circle, .schedule__grid-55-circle, .schedule__grid-56-circle, .schedule__grid-57-circle, .schedule__grid-58-circle, .schedule__grid-59-circle, .schedule__grid-60-circle, .schedule__grid-61-circle, .schedule__grid-62-circle, .schedule__grid-63-circle, .schedule__grid-64-circle, .schedule__grid-65-circle, .schedule__grid-66-circle, .schedule__grid-67-circle, .schedule__grid-68-circle, .schedule__grid-69-circle, .schedule__grid-70-circle, .schedule__grid-71-circle, .schedule__grid-72-circle, .schedule__grid-73-circle, .schedule__grid-74-circle, .schedule__grid-75-circle, .schedule__grid-76-circle, .schedule__grid-77-circle, .schedule__grid-78-circle, .schedule__grid-79-circle, .schedule__grid-80-circle, .schedule__grid-81-circle, .schedule__grid-82-circle, .schedule__grid-83-circle, .schedule__grid-84-circle, .schedule__grid-85-circle, .schedule__grid-86-circle, .schedule__grid-87-circle, .schedule__grid-88-circle, .schedule__grid-89-circle, .schedule__grid-90-circle, .schedule__grid-91-circle, .schedule__grid-92-circle, .schedule__grid-93-circle, .schedule__grid-94-circle, .schedule__grid-95-circle, .schedule__grid-96-circle, .schedule__grid-97-circle, .schedule__grid-98-circle {
+  width: 20px;
+  height: 20px;
+  background: #235390;
+  border-radius: 50%;
+  margin: 0px 8px 0px 0px;
+  display: none;
+}
+.schedule__grid-1-text, .schedule__grid-2-text, .schedule__grid-3-text, .schedule__grid-4-text, .schedule__grid-5-text, .schedule__grid-6-text, .schedule__grid-7-text, .schedule__grid-8-text, .schedule__grid-9-text, .schedule__grid-10-text, .schedule__grid-11-text, .schedule__grid-12-text, .schedule__grid-13-text, .schedule__grid-14-text, .schedule__grid-15-text, .schedule__grid-16-text, .schedule__grid-17-text, .schedule__grid-18-text, .schedule__grid-19-text, .schedule__grid-20-text, .schedule__grid-21-text, .schedule__grid-22-text, .schedule__grid-23-text, .schedule__grid-24-text, .schedule__grid-25-text, .schedule__grid-26-text, .schedule__grid-27-text, .schedule__grid-28-text, .schedule__grid-29-text, .schedule__grid-30-text, .schedule__grid-31-text, .schedule__grid-32-text, .schedule__grid-33-text, .schedule__grid-34-text, .schedule__grid-35-text, .schedule__grid-36-text, .schedule__grid-37-text, .schedule__grid-38-text, .schedule__grid-39-text, .schedule__grid-40-text, .schedule__grid-41-text, .schedule__grid-42-text, .schedule__grid-43-text, .schedule__grid-44-text, .schedule__grid-45-text, .schedule__grid-46-text, .schedule__grid-47-text, .schedule__grid-48-text, .schedule__grid-49-text, .schedule__grid-50-text, .schedule__grid-51-text, .schedule__grid-52-text, .schedule__grid-53-text, .schedule__grid-54-text, .schedule__grid-55-text, .schedule__grid-56-text, .schedule__grid-57-text, .schedule__grid-58-text, .schedule__grid-59-text, .schedule__grid-60-text, .schedule__grid-61-text, .schedule__grid-62-text, .schedule__grid-63-text, .schedule__grid-64-text, .schedule__grid-65-text, .schedule__grid-66-text, .schedule__grid-67-text, .schedule__grid-68-text, .schedule__grid-69-text, .schedule__grid-70-text, .schedule__grid-71-text, .schedule__grid-72-text, .schedule__grid-73-text, .schedule__grid-74-text, .schedule__grid-75-text, .schedule__grid-76-text, .schedule__grid-77-text, .schedule__grid-78-text, .schedule__grid-79-text, .schedule__grid-80-text, .schedule__grid-81-text, .schedule__grid-82-text, .schedule__grid-83-text, .schedule__grid-84-text, .schedule__grid-85-text, .schedule__grid-86-text, .schedule__grid-87-text, .schedule__grid-88-text, .schedule__grid-89-text, .schedule__grid-90-text, .schedule__grid-91-text, .schedule__grid-92-text, .schedule__grid-93-text, .schedule__grid-94-text, .schedule__grid-95-text, .schedule__grid-96-text, .schedule__grid-97-text, .schedule__grid-98-text {
+  display: none;
 }
 .schedule__grid-1:hover, .schedule__grid-2:hover, .schedule__grid-3:hover, .schedule__grid-4:hover, .schedule__grid-5:hover, .schedule__grid-6:hover, .schedule__grid-7:hover, .schedule__grid-8:hover, .schedule__grid-9:hover, .schedule__grid-10:hover, .schedule__grid-11:hover, .schedule__grid-12:hover, .schedule__grid-13:hover, .schedule__grid-14:hover, .schedule__grid-15:hover, .schedule__grid-16:hover, .schedule__grid-17:hover, .schedule__grid-18:hover, .schedule__grid-19:hover, .schedule__grid-20:hover, .schedule__grid-21:hover, .schedule__grid-22:hover, .schedule__grid-23:hover, .schedule__grid-24:hover, .schedule__grid-25:hover, .schedule__grid-26:hover, .schedule__grid-27:hover, .schedule__grid-28:hover, .schedule__grid-29:hover, .schedule__grid-30:hover, .schedule__grid-31:hover, .schedule__grid-32:hover, .schedule__grid-33:hover, .schedule__grid-34:hover, .schedule__grid-35:hover, .schedule__grid-36:hover, .schedule__grid-37:hover, .schedule__grid-38:hover, .schedule__grid-39:hover, .schedule__grid-40:hover, .schedule__grid-41:hover, .schedule__grid-42:hover, .schedule__grid-43:hover, .schedule__grid-44:hover, .schedule__grid-45:hover, .schedule__grid-46:hover, .schedule__grid-47:hover, .schedule__grid-48:hover, .schedule__grid-49:hover, .schedule__grid-50:hover, .schedule__grid-51:hover, .schedule__grid-52:hover, .schedule__grid-53:hover, .schedule__grid-54:hover, .schedule__grid-55:hover, .schedule__grid-56:hover, .schedule__grid-57:hover, .schedule__grid-58:hover, .schedule__grid-59:hover, .schedule__grid-60:hover, .schedule__grid-61:hover, .schedule__grid-62:hover, .schedule__grid-63:hover, .schedule__grid-64:hover, .schedule__grid-65:hover, .schedule__grid-66:hover, .schedule__grid-67:hover, .schedule__grid-68:hover, .schedule__grid-69:hover, .schedule__grid-70:hover, .schedule__grid-71:hover, .schedule__grid-72:hover, .schedule__grid-73:hover, .schedule__grid-74:hover, .schedule__grid-75:hover, .schedule__grid-76:hover, .schedule__grid-77:hover, .schedule__grid-78:hover, .schedule__grid-79:hover, .schedule__grid-80:hover, .schedule__grid-81:hover, .schedule__grid-82:hover, .schedule__grid-83:hover, .schedule__grid-84:hover, .schedule__grid-85:hover, .schedule__grid-86:hover, .schedule__grid-87:hover, .schedule__grid-88:hover, .schedule__grid-89:hover, .schedule__grid-90:hover, .schedule__grid-91:hover, .schedule__grid-92:hover, .schedule__grid-93:hover, .schedule__grid-94:hover, .schedule__grid-95:hover, .schedule__grid-96:hover, .schedule__grid-97:hover, .schedule__grid-98:hover {
   border: 2px dashed #235390;
-  height: 90%;
-  margin: 4px 0px -10px 0px;
+  height: 80%;
+  margin: -13px 0px -10px 0px;
   width: 90%;
   border-radius: 5px;
   position: relative;
+  top: 29%;
   left: 5%;
 }
-.schedule__grid-1-1 {
+.schedule__grid-1:hover .schedule__grid-1-circle, .schedule__grid-2:hover .schedule__grid-1-circle, .schedule__grid-3:hover .schedule__grid-1-circle, .schedule__grid-4:hover .schedule__grid-1-circle, .schedule__grid-5:hover .schedule__grid-1-circle, .schedule__grid-6:hover .schedule__grid-1-circle, .schedule__grid-7:hover .schedule__grid-1-circle, .schedule__grid-8:hover .schedule__grid-1-circle, .schedule__grid-9:hover .schedule__grid-1-circle, .schedule__grid-10:hover .schedule__grid-1-circle, .schedule__grid-11:hover .schedule__grid-1-circle, .schedule__grid-12:hover .schedule__grid-1-circle, .schedule__grid-13:hover .schedule__grid-1-circle, .schedule__grid-14:hover .schedule__grid-1-circle, .schedule__grid-15:hover .schedule__grid-1-circle, .schedule__grid-16:hover .schedule__grid-1-circle, .schedule__grid-17:hover .schedule__grid-1-circle, .schedule__grid-18:hover .schedule__grid-1-circle, .schedule__grid-19:hover .schedule__grid-1-circle, .schedule__grid-20:hover .schedule__grid-1-circle, .schedule__grid-21:hover .schedule__grid-1-circle, .schedule__grid-22:hover .schedule__grid-1-circle, .schedule__grid-23:hover .schedule__grid-1-circle, .schedule__grid-24:hover .schedule__grid-1-circle, .schedule__grid-25:hover .schedule__grid-1-circle, .schedule__grid-26:hover .schedule__grid-1-circle, .schedule__grid-27:hover .schedule__grid-1-circle, .schedule__grid-28:hover .schedule__grid-1-circle, .schedule__grid-29:hover .schedule__grid-1-circle, .schedule__grid-30:hover .schedule__grid-1-circle, .schedule__grid-31:hover .schedule__grid-1-circle, .schedule__grid-32:hover .schedule__grid-1-circle, .schedule__grid-33:hover .schedule__grid-1-circle, .schedule__grid-34:hover .schedule__grid-1-circle, .schedule__grid-35:hover .schedule__grid-1-circle, .schedule__grid-36:hover .schedule__grid-1-circle, .schedule__grid-37:hover .schedule__grid-1-circle, .schedule__grid-38:hover .schedule__grid-1-circle, .schedule__grid-39:hover .schedule__grid-1-circle, .schedule__grid-40:hover .schedule__grid-1-circle, .schedule__grid-41:hover .schedule__grid-1-circle, .schedule__grid-42:hover .schedule__grid-1-circle, .schedule__grid-43:hover .schedule__grid-1-circle, .schedule__grid-44:hover .schedule__grid-1-circle, .schedule__grid-45:hover .schedule__grid-1-circle, .schedule__grid-46:hover .schedule__grid-1-circle, .schedule__grid-47:hover .schedule__grid-1-circle, .schedule__grid-48:hover .schedule__grid-1-circle, .schedule__grid-49:hover .schedule__grid-1-circle, .schedule__grid-50:hover .schedule__grid-1-circle, .schedule__grid-51:hover .schedule__grid-1-circle, .schedule__grid-52:hover .schedule__grid-1-circle, .schedule__grid-53:hover .schedule__grid-1-circle, .schedule__grid-54:hover .schedule__grid-1-circle, .schedule__grid-55:hover .schedule__grid-1-circle, .schedule__grid-56:hover .schedule__grid-1-circle, .schedule__grid-57:hover .schedule__grid-1-circle, .schedule__grid-58:hover .schedule__grid-1-circle, .schedule__grid-59:hover .schedule__grid-1-circle, .schedule__grid-60:hover .schedule__grid-1-circle, .schedule__grid-61:hover .schedule__grid-1-circle, .schedule__grid-62:hover .schedule__grid-1-circle, .schedule__grid-63:hover .schedule__grid-1-circle, .schedule__grid-64:hover .schedule__grid-1-circle, .schedule__grid-65:hover .schedule__grid-1-circle, .schedule__grid-66:hover .schedule__grid-1-circle, .schedule__grid-67:hover .schedule__grid-1-circle, .schedule__grid-68:hover .schedule__grid-1-circle, .schedule__grid-69:hover .schedule__grid-1-circle, .schedule__grid-70:hover .schedule__grid-1-circle, .schedule__grid-71:hover .schedule__grid-1-circle, .schedule__grid-72:hover .schedule__grid-1-circle, .schedule__grid-73:hover .schedule__grid-1-circle, .schedule__grid-74:hover .schedule__grid-1-circle, .schedule__grid-75:hover .schedule__grid-1-circle, .schedule__grid-76:hover .schedule__grid-1-circle, .schedule__grid-77:hover .schedule__grid-1-circle, .schedule__grid-78:hover .schedule__grid-1-circle, .schedule__grid-79:hover .schedule__grid-1-circle, .schedule__grid-80:hover .schedule__grid-1-circle, .schedule__grid-81:hover .schedule__grid-1-circle, .schedule__grid-82:hover .schedule__grid-1-circle, .schedule__grid-83:hover .schedule__grid-1-circle, .schedule__grid-84:hover .schedule__grid-1-circle, .schedule__grid-85:hover .schedule__grid-1-circle, .schedule__grid-86:hover .schedule__grid-1-circle, .schedule__grid-87:hover .schedule__grid-1-circle, .schedule__grid-88:hover .schedule__grid-1-circle, .schedule__grid-89:hover .schedule__grid-1-circle, .schedule__grid-90:hover .schedule__grid-1-circle, .schedule__grid-91:hover .schedule__grid-1-circle, .schedule__grid-92:hover .schedule__grid-1-circle, .schedule__grid-93:hover .schedule__grid-1-circle, .schedule__grid-94:hover .schedule__grid-1-circle, .schedule__grid-95:hover .schedule__grid-1-circle, .schedule__grid-96:hover .schedule__grid-1-circle, .schedule__grid-97:hover .schedule__grid-1-circle, .schedule__grid-98:hover .schedule__grid-1-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.schedule__grid-1:hover .schedule__grid-1-text, .schedule__grid-2:hover .schedule__grid-1-text, .schedule__grid-3:hover .schedule__grid-1-text, .schedule__grid-4:hover .schedule__grid-1-text, .schedule__grid-5:hover .schedule__grid-1-text, .schedule__grid-6:hover .schedule__grid-1-text, .schedule__grid-7:hover .schedule__grid-1-text, .schedule__grid-8:hover .schedule__grid-1-text, .schedule__grid-9:hover .schedule__grid-1-text, .schedule__grid-10:hover .schedule__grid-1-text, .schedule__grid-11:hover .schedule__grid-1-text, .schedule__grid-12:hover .schedule__grid-1-text, .schedule__grid-13:hover .schedule__grid-1-text, .schedule__grid-14:hover .schedule__grid-1-text, .schedule__grid-15:hover .schedule__grid-1-text, .schedule__grid-16:hover .schedule__grid-1-text, .schedule__grid-17:hover .schedule__grid-1-text, .schedule__grid-18:hover .schedule__grid-1-text, .schedule__grid-19:hover .schedule__grid-1-text, .schedule__grid-20:hover .schedule__grid-1-text, .schedule__grid-21:hover .schedule__grid-1-text, .schedule__grid-22:hover .schedule__grid-1-text, .schedule__grid-23:hover .schedule__grid-1-text, .schedule__grid-24:hover .schedule__grid-1-text, .schedule__grid-25:hover .schedule__grid-1-text, .schedule__grid-26:hover .schedule__grid-1-text, .schedule__grid-27:hover .schedule__grid-1-text, .schedule__grid-28:hover .schedule__grid-1-text, .schedule__grid-29:hover .schedule__grid-1-text, .schedule__grid-30:hover .schedule__grid-1-text, .schedule__grid-31:hover .schedule__grid-1-text, .schedule__grid-32:hover .schedule__grid-1-text, .schedule__grid-33:hover .schedule__grid-1-text, .schedule__grid-34:hover .schedule__grid-1-text, .schedule__grid-35:hover .schedule__grid-1-text, .schedule__grid-36:hover .schedule__grid-1-text, .schedule__grid-37:hover .schedule__grid-1-text, .schedule__grid-38:hover .schedule__grid-1-text, .schedule__grid-39:hover .schedule__grid-1-text, .schedule__grid-40:hover .schedule__grid-1-text, .schedule__grid-41:hover .schedule__grid-1-text, .schedule__grid-42:hover .schedule__grid-1-text, .schedule__grid-43:hover .schedule__grid-1-text, .schedule__grid-44:hover .schedule__grid-1-text, .schedule__grid-45:hover .schedule__grid-1-text, .schedule__grid-46:hover .schedule__grid-1-text, .schedule__grid-47:hover .schedule__grid-1-text, .schedule__grid-48:hover .schedule__grid-1-text, .schedule__grid-49:hover .schedule__grid-1-text, .schedule__grid-50:hover .schedule__grid-1-text, .schedule__grid-51:hover .schedule__grid-1-text, .schedule__grid-52:hover .schedule__grid-1-text, .schedule__grid-53:hover .schedule__grid-1-text, .schedule__grid-54:hover .schedule__grid-1-text, .schedule__grid-55:hover .schedule__grid-1-text, .schedule__grid-56:hover .schedule__grid-1-text, .schedule__grid-57:hover .schedule__grid-1-text, .schedule__grid-58:hover .schedule__grid-1-text, .schedule__grid-59:hover .schedule__grid-1-text, .schedule__grid-60:hover .schedule__grid-1-text, .schedule__grid-61:hover .schedule__grid-1-text, .schedule__grid-62:hover .schedule__grid-1-text, .schedule__grid-63:hover .schedule__grid-1-text, .schedule__grid-64:hover .schedule__grid-1-text, .schedule__grid-65:hover .schedule__grid-1-text, .schedule__grid-66:hover .schedule__grid-1-text, .schedule__grid-67:hover .schedule__grid-1-text, .schedule__grid-68:hover .schedule__grid-1-text, .schedule__grid-69:hover .schedule__grid-1-text, .schedule__grid-70:hover .schedule__grid-1-text, .schedule__grid-71:hover .schedule__grid-1-text, .schedule__grid-72:hover .schedule__grid-1-text, .schedule__grid-73:hover .schedule__grid-1-text, .schedule__grid-74:hover .schedule__grid-1-text, .schedule__grid-75:hover .schedule__grid-1-text, .schedule__grid-76:hover .schedule__grid-1-text, .schedule__grid-77:hover .schedule__grid-1-text, .schedule__grid-78:hover .schedule__grid-1-text, .schedule__grid-79:hover .schedule__grid-1-text, .schedule__grid-80:hover .schedule__grid-1-text, .schedule__grid-81:hover .schedule__grid-1-text, .schedule__grid-82:hover .schedule__grid-1-text, .schedule__grid-83:hover .schedule__grid-1-text, .schedule__grid-84:hover .schedule__grid-1-text, .schedule__grid-85:hover .schedule__grid-1-text, .schedule__grid-86:hover .schedule__grid-1-text, .schedule__grid-87:hover .schedule__grid-1-text, .schedule__grid-88:hover .schedule__grid-1-text, .schedule__grid-89:hover .schedule__grid-1-text, .schedule__grid-90:hover .schedule__grid-1-text, .schedule__grid-91:hover .schedule__grid-1-text, .schedule__grid-92:hover .schedule__grid-1-text, .schedule__grid-93:hover .schedule__grid-1-text, .schedule__grid-94:hover .schedule__grid-1-text, .schedule__grid-95:hover .schedule__grid-1-text, .schedule__grid-96:hover .schedule__grid-1-text, .schedule__grid-97:hover .schedule__grid-1-text, .schedule__grid-98:hover .schedule__grid-1-text {
+  display: inline;
+  color: #235390;
+}
+.schedule__grid-92, .schedule__grid-93, .schedule__grid-94, .schedule__grid-95, .schedule__grid-96, .schedule__grid-97, .schedule__grid-98 {
+  border: none;
+}
+
+.modal-second {
+  z-index: 3;
+  position: absolute;
+  left: 31.04%;
+  right: 28.62%;
+  top: 29.69%;
+  bottom: 33.85%;
+  width: 551px;
+  height: 280px;
   display: none;
+  background: #F5E6FE;
+  border-radius: 15px;
+  padding: 23px 0px 17.23px 0px;
 }
