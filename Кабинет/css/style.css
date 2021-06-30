@@ -579,3 +579,6 @@ body {
   border-radius: 15px;
   padding: 23px 0px 17.23px 0px;
 }
+.modal-second .schedule__grid-1:active {
+  display: none;
+}

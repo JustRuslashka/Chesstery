@@ -204,6 +204,10 @@
             <div class="schedule__grid-1-text">
               Новый урок
             </div>   
+            <div id="c" class="modal-second">
+
+            </div>
+            <div id="b" class="background"></div>
           </a>
           <a href="#" class="schedule__grid-2">
             <div class="schedule__grid-1-circle">
@@ -264,7 +268,6 @@
               Новый урок
             </div>   
           </a>
-       
           <a href="#" class="schedule__grid-8">
             <div class="schedule__grid-1-circle">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -335,7 +338,6 @@
               Новый урок
             </div>   
           </a>
-
           <a href="#" class="schedule__grid-15">
             <div class="schedule__grid-1-circle">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -406,7 +408,6 @@
               Новый урок
             </div>   
           </a>
-
           <a href="#" class="schedule__grid-22">
             <div class="schedule__grid-1-circle">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -477,7 +478,6 @@
               Новый урок
             </div>   
           </a>
-
           <a href="#" class="schedule__grid-29">
             <div class="schedule__grid-1-circle">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -590,6 +590,24 @@
       a.style.top = "200px";
       
     }
+    //Вызываем функцию "hideA", которая будет скрывать 
+    //окно для элементов "a" и "b"
+    function hideA(){
+      b.style.display = "none";
+      a.style.display = "none";
+    }      
+
+  </script>
+
+
+  <script>
+    //передача элементов по id "a" и "b"
+    window.onload = function(){
+      c = document.getElementById("c");
+      b = document.getElementById("b");
+    } 
+    
+    //показываем окно функции "showB"
     function showB(){
       //Задаем прозрачность и блокируем дисплей
       //элемента "b"
@@ -598,16 +616,15 @@
       b.style.display = "block";
       // Задаем блокироваку и отступ сверху в 200px
       //элемента "a"
-      a.style.display = "block";
-      a.style.top = "200px";
+      c.style.display = "block";
+      c.style.top = "200px";
       
     }
-    
     //Вызываем функцию "hideA", которая будет скрывать 
     //окно для элементов "a" и "b"
-    function hideA(){
+    function hideB(){
       b.style.display = "none";
-      a.style.display = "none";
+      c.style.display = "none";
     }      
 
   </script>
