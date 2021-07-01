@@ -570,14 +570,25 @@ body {
   position: absolute;
   left: 31.04%;
   right: 28.62%;
-  top: 29.69%;
-  bottom: 33.85%;
-  width: 551px;
-  height: 280px;
+  top: 9.64%;
+  bottom: 9.64%;
+  border-radius: 15px;
   display: none;
   background: #F5E6FE;
   border-radius: 15px;
   padding: 23px 0px 17.23px 0px;
+}
+.modal-second__exit {
+  color: #FF2500;
+  width: 22px;
+  height: 22px;
+  background: #FFB6AA;
+  border-radius: 5px;
+  padding: 4px 6px 6px 6px;
+  margin: -30px 24px 0px 0px;
+}
+.modal-second__exit:hover {
+  background: #f59181;
 }
 .modal-second .schedule__grid-1:active {
   display: none;
