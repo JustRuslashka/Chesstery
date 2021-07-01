@@ -98,6 +98,63 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
+@media (min-width: 320px) {
+  .my-pupil {
+    margin: 10px 8px 0px 8px;
+    padding: 21px 31px 44px 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 375px) {
+  .my-pupil {
+    margin: 10px 13px 0px 13px;
+  }
+}
+@media (min-width: 414px) {
+  .my-pupil {
+    margin: 10px 16px 0px 16px;
+  }
+}
+@media (min-width: 600px) {
+  .my-pupil {
+    margin: 34px 33px 0px 45px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .my-pupil {
+    margin: 34px 46px 0px 45px;
+  }
+}
+@media (min-width: 960px) {
+  .my-pupil {
+    margin: 20px 36px 0px 33.87px;
+  }
+}
+@media (min-width: 960px) {
+  .my-pupil {
+    margin: 20px 36px 0px 35px;
+  }
+}
+@media (min-width: 1368px) {
+  .my-pupil {
+    margin: 20px 30px 0px 30px;
+  }
+}
+@media (min-width: 1700px) {
+  .my-pupil {
+    margin: 20px 86px 21px 30px;
+  }
+}
+@media (min-width: 2160px) {
+  .my-pupil {
+    margin: 39px 59.53px 21px 52px;
+  }
+}
 .my-pupil__label {
   margin: 0px 0px 19px 0px;
   font-weight: 800;
@@ -167,6 +224,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 @media (min-width: 320px) {
   .my-pupil__bottom {
@@ -174,6 +232,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media (min-width: 600px) {
+  .my-pupil__bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .my-pupil__bottom-left {
@@ -286,6 +352,11 @@ body {
 @media (min-width: 320px) {
   .my-pupil__bottom-right {
     margin: 24px 0px 0px 0px;
+  }
+}
+@media (min-width: 600px) {
+  .my-pupil__bottom-right {
+    margin: 0px 0px 0px 30px;
   }
 }
 .my-pupil__bottom-right__all-your-pupils {
