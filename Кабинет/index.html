@@ -1948,6 +1948,9 @@
         </div>
       </div>
     </div>
+    <div class="modal-second">
+      
+    </div>
   </div>
   <script>
     //передача элементов по id "a" и "b"
@@ -1979,34 +1982,6 @@
   </script>
 
 
-  <script>
-    //передача элементов по id "a" и "b"
-    window.onload = function(){
-      c = document.getElementById("c");
-      b = document.getElementById("b");
-    } 
-    
-    //показываем окно функции "showB"
-    function showB(){
-      //Задаем прозрачность и блокируем дисплей
-      //элемента "b"
-      b.style.filter = "alpha(opacity=80)";
-      b.style.opacity = 0.8;
-      b.style.display = "block";
-      // Задаем блокироваку и отступ сверху в 200px
-      //элемента "a"
-      c.style.display = "block";
-      c.style.top = "200px";
-      
-      
-    }
-    //Вызываем функцию "hideA", которая будет скрывать 
-    //окно для элементов "a" и "b"
-    function hideB(){
-      b.style.display = "none";
-      c.style.display = "none";
-    }      
 
-  </script>
 </body>
 </html>
