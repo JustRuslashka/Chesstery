@@ -322,15 +322,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 320px) {
   .modal-second {
-    width: 95%;
+    width: 96%;
     height: 311px;
     margin: 0px 8px 0px 8px;
     padding: 18.84px 0px 15.08px 0px;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 414px) {
   .modal-second {
-    width: auto;
+    margin: 0px 16px 0px 16px;
   }
 }
 @media (min-width: 550px) {
@@ -432,6 +432,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20.24px 0px 0px 0px;
   line-height: 20.46px;
 }
+@media (min-width: 375px) {
+  .modal-second__text {
+    width: 323px;
+  }
+}
 @media (min-width: 600px) {
   .modal-second__text {
     width: 465px;
@@ -474,25 +479,30 @@ h1, h2, h3, h4, h5, h6 {
   .modal-second__btn {
     padding: 0px 10px 0px 10px;
     height: 40px;
-  }
-}
-@media (min-width: 414px) {
-  .modal-second__btn {
-    width: 286px;
-    height: 40px;
+    width: 328px;
   }
 }
 
 .modal-third {
   z-index: 3;
   position: absolute;
-  width: 551px;
-  height: 620px;
   font-family: "Nunito", sans-serif;
   background: #F5E6FE;
   border-radius: 15px;
   padding: 23px 0px 17.23px 0px;
   margin: 350px 0px 0px 0px;
+}
+@media (min-width: 320px) {
+  .modal-third {
+    width: 100%;
+    margin: 350px 8px 0px 8px;
+  }
+}
+@media (min-width: 600px) {
+  .modal-third {
+    width: 551px;
+    height: 620px;
+  }
 }
 .modal-third__label {
   font-weight: 800;
@@ -573,7 +583,6 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px 8px 0px 9px;
-  padding: 5px 10px 6px 10px;
 }
 .modal-third__day-text {
   font-weight: 600;
@@ -615,7 +624,6 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px 8px 0px 8px;
-  padding: 5px 10px 6px 10px;
 }
 .modal-third__hours-text {
   font-weight: 600;
@@ -657,7 +665,6 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px 8px 0px 8px;
-  padding: 5px 10px 6px 10px;
 }
 .modal-third__minutes-text {
   font-weight: 600;
@@ -693,7 +700,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   color: #545454;
 }
-.modal-third__checkbox-check {
+.modal-third__checkbox-square {
   margin: 0px 10px 0px 0px;
   width: 15px;
   height: 15px;
@@ -938,6 +945,13 @@ body {
             justify-content: center;
   }
 }
+@media (min-width: 600px) {
+  .my-pupil__menu {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
 .my-pupil__pupils {
   margin: 0px 20px 0px 0px;
   color: #235390;
@@ -957,6 +971,12 @@ body {
     margin: 0px 0px 20px -28px;
   }
 }
+@media (min-width: 600px) {
+  .my-pupil__line {
+    margin: 0px 0px 20px 0px;
+    width: 130%;
+  }
+}
 .my-pupil__line-pupils {
   width: 61px;
   border-bottom: 2px solid #235390;
@@ -967,6 +987,11 @@ body {
     margin: -2px 0px 0px 55px;
   }
 }
+@media (min-width: 600px) {
+  .my-pupil__line-pupils {
+    margin: -2px 0px 0px 1px;
+  }
+}
 .my-pupil__line-groups {
   width: 55px;
   border-bottom: 2px solid #C200AF;
@@ -974,6 +999,11 @@ body {
 @media (min-width: 320px) {
   .my-pupil__line-groups {
     margin: -2px 0px 0px 136px;
+  }
+}
+@media (min-width: 600px) {
+  .my-pupil__line-groups {
+    margin: -2px 0px 0px 83px;
   }
 }
 .my-pupil__bottom {
@@ -1327,7 +1357,7 @@ body {
 .schedule__grid-1-inside:hover, .schedule__grid-2-inside:hover, .schedule__grid-3-inside:hover, .schedule__grid-4-inside:hover, .schedule__grid-5-inside:hover, .schedule__grid-6-inside:hover, .schedule__grid-7-inside:hover, .schedule__grid-8-inside:hover, .schedule__grid-9-inside:hover, .schedule__grid-10-inside:hover, .schedule__grid-11-inside:hover, .schedule__grid-12-inside:hover, .schedule__grid-13-inside:hover, .schedule__grid-14-inside:hover, .schedule__grid-15-inside:hover, .schedule__grid-16-inside:hover, .schedule__grid-17-inside:hover, .schedule__grid-18-inside:hover, .schedule__grid-19-inside:hover, .schedule__grid-20-inside:hover, .schedule__grid-21-inside:hover, .schedule__grid-22-inside:hover, .schedule__grid-23-inside:hover, .schedule__grid-24-inside:hover, .schedule__grid-25-inside:hover, .schedule__grid-26-inside:hover, .schedule__grid-27-inside:hover, .schedule__grid-28-inside:hover, .schedule__grid-29-inside:hover, .schedule__grid-30-inside:hover, .schedule__grid-31-inside:hover, .schedule__grid-32-inside:hover, .schedule__grid-33-inside:hover, .schedule__grid-34-inside:hover, .schedule__grid-35-inside:hover, .schedule__grid-36-inside:hover, .schedule__grid-37-inside:hover, .schedule__grid-38-inside:hover, .schedule__grid-39-inside:hover, .schedule__grid-40-inside:hover, .schedule__grid-41-inside:hover, .schedule__grid-42-inside:hover, .schedule__grid-43-inside:hover, .schedule__grid-44-inside:hover, .schedule__grid-45-inside:hover, .schedule__grid-46-inside:hover, .schedule__grid-47-inside:hover, .schedule__grid-48-inside:hover, .schedule__grid-49-inside:hover, .schedule__grid-50-inside:hover, .schedule__grid-51-inside:hover, .schedule__grid-52-inside:hover, .schedule__grid-53-inside:hover, .schedule__grid-54-inside:hover, .schedule__grid-55-inside:hover, .schedule__grid-56-inside:hover, .schedule__grid-57-inside:hover, .schedule__grid-58-inside:hover, .schedule__grid-59-inside:hover, .schedule__grid-60-inside:hover, .schedule__grid-61-inside:hover, .schedule__grid-62-inside:hover, .schedule__grid-63-inside:hover, .schedule__grid-64-inside:hover, .schedule__grid-65-inside:hover, .schedule__grid-66-inside:hover, .schedule__grid-67-inside:hover, .schedule__grid-68-inside:hover, .schedule__grid-69-inside:hover, .schedule__grid-70-inside:hover, .schedule__grid-71-inside:hover, .schedule__grid-72-inside:hover, .schedule__grid-73-inside:hover, .schedule__grid-74-inside:hover, .schedule__grid-75-inside:hover, .schedule__grid-76-inside:hover, .schedule__grid-77-inside:hover, .schedule__grid-78-inside:hover, .schedule__grid-79-inside:hover, .schedule__grid-80-inside:hover, .schedule__grid-81-inside:hover, .schedule__grid-82-inside:hover, .schedule__grid-83-inside:hover, .schedule__grid-84-inside:hover, .schedule__grid-85-inside:hover, .schedule__grid-86-inside:hover, .schedule__grid-87-inside:hover, .schedule__grid-88-inside:hover, .schedule__grid-89-inside:hover, .schedule__grid-90-inside:hover, .schedule__grid-91-inside:hover, .schedule__grid-92-inside:hover, .schedule__grid-93-inside:hover, .schedule__grid-94-inside:hover, .schedule__grid-95-inside:hover, .schedule__grid-96-inside:hover, .schedule__grid-97-inside:hover, .schedule__grid-98-inside:hover, .schedule__grid-83-inside:hover, .schedule__grid-84-inside:hover, .schedule__grid-85-inside:hover, .schedule__grid-86-inside:hover, .schedule__grid-87-inside:hover, .schedule__grid-88-inside:hover, .schedule__grid-89-inside:hover, .schedule__grid-90-inside:hover, .schedule__grid-91-inside:hover, .schedule__grid-92-inside:hover, .schedule__grid-93-inside:hover, .schedule__grid-94-inside:hover, .schedule__grid-95-inside:hover, .schedule__grid-96-inside:hover, .schedule__grid-97-inside:hover, .schedule__grid-98-inside:hover, .schedule__grid-99-inside:hover, .schedule__grid-100-inside:hover, .schedule__grid-101-inside:hover, .schedule__grid-102-inside:hover, .schedule__grid-103-inside:hover, .schedule__grid-104-inside:hover, .schedule__grid-105-inside:hover, .schedule__grid-106-inside:hover, .schedule__grid-107-inside:hover, .schedule__grid-108-inside:hover, .schedule__grid-109-inside:hover, .schedule__grid-110-inside:hover, .schedule__grid-111-inside:hover, .schedule__grid-112-inside:hover, .schedule__grid-113-inside:hover, .schedule__grid-114-inside:hover, .schedule__grid-115-inside:hover, .schedule__grid-116-inside:hover, .schedule__grid-117-inside:hover, .schedule__grid-118-inside:hover, .schedule__grid-119-inside:hover, .schedule__grid-120-inside:hover, .schedule__grid-121-inside:hover, .schedule__grid-122-inside:hover, .schedule__grid-123-inside:hover, .schedule__grid-124-inside:hover, .schedule__grid-125-inside:hover, .schedule__grid-126-inside:hover, .schedule__grid-127-inside:hover, .schedule__grid-128-inside:hover, .schedule__grid-129-inside:hover, .schedule__grid-130-inside:hover, .schedule__grid-131-inside:hover, .schedule__grid-132-inside:hover, .schedule__grid-133-inside:hover {
   border: 2px dashed #235390;
   height: 80%;
-  margin: -13px 0px -10px 0px;
+  margin: -14px 0px -11px 0px;
   width: 80%;
   border-radius: 5px;
   position: relative;
