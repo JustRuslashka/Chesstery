@@ -692,21 +692,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 11px -30px 23px 0px;
 }
 .modal-third__checkbox-input {
-  display: none;
+  margin: 0px 10px 0px 0px;
+  width: 15px;
+  height: 15px;
+  /* White */
+  background: #FFFFFF;
 }
 .modal-third__checkbox-text {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
   color: #545454;
-}
-.modal-third__checkbox-square {
-  margin: 0px 10px 0px 0px;
-  width: 15px;
-  height: 15px;
-  /* White */
-  background: #FFFFFF;
-  border-radius: 2px;
 }
 .modal-third__menu {
   display: -webkit-box;
@@ -840,6 +836,236 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 2px 3px;
 }
 
+.modal-fourth {
+  z-index: 3;
+  font-family: "Nunito", sans-serif;
+  background: #F5E6FE;
+  border-radius: 15px;
+  width: 551px;
+  height: 382px;
+  padding: 23px 0px 17.23px 0px;
+  margin: 1150px 0px 0px 0px;
+}
+@media (min-width: 320px) {
+  .modal-fourth {
+    margin: 1150px 8px 0px 8px;
+  }
+}
+.modal-fourth__label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+@media (min-width: 320px) {
+  .modal-fourth__label {
+    font-size: 15px;
+    line-height: 20.46px;
+    margin: 0px 0px 0px -5px;
+  }
+}
+.modal-fourth__line {
+  width: 100%;
+  border-top: 1px solid #FFFFFF;
+  margin: 12px 0px 32px 0px;
+}
+.modal-fourth__line-2 {
+  width: 110%;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 485px 0px 0px 0px;
+}
+.modal-fourth__exit {
+  color: #FF2500;
+  width: 22px;
+  height: 22px;
+  background: #FFB6AA;
+  border-radius: 5px;
+  padding: 4px 6px 6px 6px;
+  margin: -30px 24px 0px 0px;
+}
+.modal-fourth__exit:hover {
+  background: #f59181;
+}
+.modal-fourth__content {
+  padding: 0px 111px 0px 77px;
+}
+.modal-fourth__lesson-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-fourth__text {
+  width: 92px;
+  height: 20px;
+}
+.modal-fourth__day {
+  width: 100px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 8px 0px 9px;
+}
+.modal-fourth__day-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+  margin: 0px 6px 0px 0px;
+}
+.modal-fourth__at {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+}
+.modal-fourth__hours {
+  width: 59px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 8px 0px 8px;
+}
+.modal-fourth__hours-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+  margin: 0px 6px 0px 0px;
+}
+.modal-fourth__dvoetochiye {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+}
+.modal-fourth__minutes {
+  width: 59px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 8px 0px 8px;
+}
+.modal-fourth__minutes-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+  margin: 0px 6px 0px 0px;
+}
+.modal-fourth__students {
+  margin: 15px 0px 0px 0px;
+}
+.modal-fourth__student {
+  height: 52px;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 0px 0px;
+  border-radius: 5px;
+}
+.modal-fourth__student:hover {
+  background-color: #EDD2FE;
+}
+.modal-fourth__student:active .modal-fourth__student-mins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-fourth__student-pic {
+  margin: 0px 11px 0px 15px;
+}
+.modal-fourth__student-name {
+  width: 143px;
+  height: 20px;
+}
+.modal-fourth__student-mins {
+  width: 86px;
+  height: 186px;
+  margin: 155px 0px 0px 58px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 6px 9px 0px 7px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #545454;
+  display: none;
+  z-index: 3;
+}
+.modal-fourth__student-mins-default-svg {
+  margin: 0px 0px 2px 3px;
+}
+.modal-fourth__lesson-state-label {
+  margin: 26px 0px 8px 0px;
+}
 body {
   height: 100%;
   min-height: 100vh;
