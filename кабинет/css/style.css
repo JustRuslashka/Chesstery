@@ -1,0 +1,1351 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.modal-first {
+  z-index: 3;
+  position: absolute;
+  width: 551px;
+  height: 280px;
+  display: none;
+  background: #F5E6FE;
+  border-radius: 15px;
+  padding: 23px 0px 17.23px 0px;
+}
+@media (min-width: 320px) {
+  .modal-first {
+    width: 95%;
+    height: 271px;
+    margin: -125px 18px 0px -29px;
+    padding: 18.84px 0px 15.08px 0px;
+  }
+}
+@media (min-width: 375px) {
+  .modal-first {
+    height: 271.46px;
+  }
+}
+@media (min-width: 414px) {
+  .modal-first {
+    height: 279.25px;
+  }
+}
+@media (min-width: 550px) {
+  .modal-first {
+    width: 94%;
+    margin: -125px 18px 0px -29px;
+  }
+}
+@media (min-width: 600px) {
+  .modal-first {
+    left: 28.62%;
+    right: 28.62%;
+    top: 29.69%;
+    bottom: 33.85%;
+    width: 551px;
+    height: 280px;
+  }
+}
+.modal-first__label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+@media (min-width: 320px) {
+  .modal-first__label {
+    font-size: 15px;
+    line-height: 20.46px;
+    margin: 0px 0px 0px -5px;
+  }
+}
+.modal-first__line {
+  width: 100%;
+  border-top: 1px solid #FFFFFF;
+  position: absolute;
+  top: 61px;
+}
+@media (min-width: 320px) {
+  .modal-first__line {
+    top: 48px;
+  }
+}
+.modal-first__line-2 {
+  top: 205px;
+}
+@media (min-width: 320px) {
+  .modal-first__line-2 {
+    top: 207.16px;
+  }
+}
+.modal-first__exit {
+  color: #FF2500;
+  width: 22px;
+  height: 22px;
+  background: #FFB6AA;
+  border-radius: 5px;
+  padding: 4px 6px 6px 6px;
+  margin: -30px 24px 0px 0px;
+}
+.modal-first__exit:hover {
+  background: #f59181;
+}
+@media (min-width: 320px) {
+  .modal-first__exit {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    margin: -35px 4px 0px 0px;
+  }
+}
+.modal-first__content {
+  margin: 32px 0px 0px 0px;
+  padding: 0px 46px 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 320px) {
+  .modal-first__content {
+    padding: 0px 21.43px 0px 22.22px;
+  }
+}
+.modal-first__call-pupil {
+  margin: 0px 0px 21px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 320px) {
+  .modal-first__call-pupil {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: -20.18px 0px 14px 0px;
+  }
+}
+.modal-first__call-pupil__text {
+  width: 143px;
+  height: 20px;
+}
+@media (min-width: 320px) {
+  .modal-first__call-pupil__text {
+    margin: 0px 0px 8.57px 0px;
+    text-align: center;
+  }
+}
+.modal-first__call-pupil__input {
+  width: 328px;
+  height: 31px;
+  padding: 5px 0px 6px 13px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+@media (min-width: 320px) {
+  .modal-first__call-pupil__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 24.61px;
+  }
+}
+.modal-first__write-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 320px) {
+  .modal-first__write-email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.modal-first__write-email__text {
+  width: 143px;
+  height: 40px;
+  line-height: 20px;
+}
+@media (min-width: 320px) {
+  .modal-first__write-email__text {
+    width: 110%;
+    text-align: center;
+  }
+}
+.modal-first__write-email__input {
+  width: 328px;
+  height: 31px;
+  padding: 5px 0px 6px 13px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+@media (min-width: 320px) {
+  .modal-first__write-email__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 24.61px;
+    margin: -10px 0px 0px 0px;
+  }
+}
+.modal-first__btn {
+  margin: 40px 0px 0px 131px;
+  width: 286px;
+  height: 40px;
+  color: #FFFFFF;
+  background: #235390;
+  border-radius: 10px;
+  line-height: 20px;
+}
+@media (min-width: 320px) {
+  .modal-first__btn {
+    margin: 37.07px 0px 0px 0px;
+    width: 100%;
+    height: 31.75px;
+  }
+}
+@media (min-width: 375px) {
+  .modal-first__btn {
+    height: 36.45px;
+  }
+}
+@media (min-width: 414px) {
+  .modal-first__btn {
+    height: 40px;
+  }
+}
+
+.modal-second {
+  z-index: 3;
+  position: absolute;
+  width: 551px;
+  height: 280px;
+  background: #F5E6FE;
+  border-radius: 15px;
+  padding: 23px 0px 17.23px 0px;
+  font-family: "Nunito", sans-serif;
+}
+@media (min-width: 320px) {
+  .modal-second {
+    width: 95%;
+    height: 311px;
+    margin: 0px 8px 0px 8px;
+    padding: 18.84px 0px 15.08px 0px;
+  }
+}
+@media (min-width: 375px) {
+  .modal-second {
+    width: auto;
+  }
+}
+@media (min-width: 550px) {
+  .modal-second {
+    width: 94%;
+  }
+}
+@media (min-width: 600px) {
+  .modal-second {
+    width: 551px;
+    height: 303px;
+  }
+}
+.modal-second__label {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+@media (min-width: 320px) {
+  .modal-second__label {
+    font-size: 15px;
+    line-height: 20.46px;
+    margin: 0px 0px 0px -5px;
+  }
+}
+.modal-second__line {
+  width: 100%;
+  border-top: 1px solid #FFFFFF;
+  margin: 10.8px 0px 0px 0px;
+}
+@media (min-width: 320px) {
+  .modal-second__line {
+    margin: 10.8px 0px 45.34px 0px;
+  }
+}
+.modal-second__line-2 {
+  width: 120%;
+  border-top: 1px solid #FFFFFF;
+  margin: 27.15px 0px 17.46px 0px;
+}
+.modal-second__exit {
+  color: #FF2500;
+  width: 22px;
+  height: 22px;
+  background: #FFB6AA;
+  border-radius: 5px;
+  padding: 4px 6px 6px 6px;
+  margin: -30px 24px 0px 0px;
+}
+.modal-second__exit:hover {
+  background: #f59181;
+}
+@media (min-width: 320px) {
+  .modal-second__exit {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    margin: -35px 4px 0px 0px;
+  }
+}
+@media (min-width: 375px) {
+  .modal-second__exit {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    margin: -35px 4px 0px 0px;
+  }
+}
+.modal-second__content {
+  padding: 0px 46px 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 320px) {
+  .modal-second__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 21.43px 0px 22.22px;
+    margin: -10px 0px 0px 0px;
+  }
+}
+@media (min-width: 375px) {
+  .modal-second__content {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+}
+.modal-second__text {
+  text-align: center;
+  margin: 20.24px 0px 0px 0px;
+  line-height: 20.46px;
+}
+@media (min-width: 600px) {
+  .modal-second__text {
+    width: 465px;
+  }
+}
+.modal-second__btn {
+  margin: 40px 0px 0px 131px;
+  width: 286px;
+  height: 40px;
+  color: #FFFFFF;
+  background: #235390;
+  border-radius: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 320px) {
+  .modal-second__btn {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 31.75px;
+  }
+}
+@media (min-width: 375px) {
+  .modal-second__btn {
+    width: 90%;
+    height: 36.45px;
+  }
+}
+@media (min-width: 414px) {
+  .modal-second__btn {
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+  }
+}
+@media (min-width: 414px) {
+  .modal-second__btn {
+    width: 286px;
+    height: 40px;
+  }
+}
+
+.modal-third {
+  z-index: 3;
+  position: absolute;
+  width: 551px;
+  height: 620px;
+  font-family: "Nunito", sans-serif;
+  background: #F5E6FE;
+  border-radius: 15px;
+  padding: 23px 0px 17.23px 0px;
+  margin: 350px 0px 0px 0px;
+}
+.modal-third__label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+@media (min-width: 320px) {
+  .modal-third__label {
+    font-size: 15px;
+    line-height: 20.46px;
+    margin: 0px 0px 0px -5px;
+  }
+}
+.modal-third__line {
+  width: 100%;
+  border-top: 1px solid #FFFFFF;
+  position: absolute;
+  top: 61px;
+}
+@media (min-width: 320px) {
+  .modal-third__line {
+    top: 48px;
+  }
+}
+.modal-third__line-2 {
+  width: 110%;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 485px 0px 0px 0px;
+}
+.modal-third__exit {
+  color: #FF2500;
+  width: 22px;
+  height: 22px;
+  background: #FFB6AA;
+  border-radius: 5px;
+  padding: 4px 6px 6px 6px;
+  margin: -30px 24px 0px 0px;
+}
+.modal-third__exit:hover {
+  background: #f59181;
+}
+.modal-third__content {
+  margin: 32px 0px 0px 0px;
+  padding: 0px 46px 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-third__lesson-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-third__day {
+  width: 100px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 8px 0px 9px;
+  padding: 5px 10px 6px 10px;
+}
+.modal-third__day-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+  margin: 0px 6px 0px 0px;
+}
+.modal-third__at {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+}
+.modal-third__hours {
+  width: 59px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 8px 0px 8px;
+  padding: 5px 10px 6px 10px;
+}
+.modal-third__hours-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+  margin: 0px 6px 0px 0px;
+}
+.modal-third__dvoetochiye {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+}
+.modal-third__minutes {
+  width: 59px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 8px 0px 8px;
+  padding: 5px 10px 6px 10px;
+}
+.modal-third__minutes-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #545454;
+  margin: 0px 6px 0px 0px;
+}
+.modal-third__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 11px -30px 23px 0px;
+}
+.modal-third__checkbox-input {
+  display: none;
+}
+.modal-third__checkbox-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #545454;
+}
+.modal-third__checkbox-check {
+  margin: 0px 10px 0px 0px;
+  width: 15px;
+  height: 15px;
+  /* White */
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+.modal-third__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 240px 5px 0px;
+}
+@media (min-width: 320px) {
+  .modal-third__menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.modal-third__pupils {
+  margin: 0px 20px 0px 0px;
+  color: #235390;
+}
+.modal-third__groups {
+  color: #C200AF;
+}
+.modal-third__line1 {
+  position: absolute;
+  width: 362px;
+  height: 0px;
+  margin: 0px 0px 0px 0px;
+  border-bottom: 2px solid #F7F7F7;
+}
+.modal-third__line1-pupils {
+  width: 61px;
+  height: 0px;
+  border: 2px solid #235390;
+}
+.modal-third__line1-groups {
+  width: 55px;
+  border-bottom: 2px solid #C200AF;
+  margin: -2px 0px 0px 136px;
+}
+.modal-third__btn {
+  margin: 55px 0px 0px 0px;
+  width: 286px;
+  height: 40px;
+  color: #FFFFFF;
+  background: #235390;
+  border-radius: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal-third__search {
+  margin: 20px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 363px;
+  height: 33px;
+  border: 1px solid #AAAAAA;
+  border-radius: 10px;
+  padding: 9px 0px 8px 18px;
+  color: #AAAAAA;
+}
+.modal-third__search-icon {
+  margin: 0px 13.91px 0px 0px;
+}
+.modal-third__search-text {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  font-family: "Nunito", sans-serif;
+}
+.modal-third__students {
+  margin: 15px 0px 0px 0px;
+}
+.modal-third__student {
+  height: 52px;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 0px 0px;
+  border-radius: 5px;
+}
+.modal-third__student:hover {
+  background-color: #EDD2FE;
+}
+.modal-third__student:active .modal-third__student-mins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-third__student-pic {
+  margin: 0px 11px 0px 15px;
+}
+.modal-third__student-name {
+  width: 143px;
+  height: 20px;
+}
+.modal-third__student-mins {
+  width: 86px;
+  height: 186px;
+  margin: 155px 0px 0px 58px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 6px 9px 0px 7px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #545454;
+  display: none;
+  z-index: 3;
+}
+.modal-third__student-mins-default-svg {
+  margin: 0px 0px 2px 3px;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  font-weight: 800;
+}
+
+.my-pupil {
+  padding: 21px 31px 29px 30px;
+  margin: 20px 30px 21px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+@media (min-width: 320px) {
+  .my-pupil {
+    margin: 10px 8px 0px 8px;
+    padding: 21px 31px 44px 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 375px) {
+  .my-pupil {
+    margin: 10px 13px 0px 13px;
+  }
+}
+@media (min-width: 414px) {
+  .my-pupil {
+    margin: 10px 16px 0px 16px;
+  }
+}
+@media (min-width: 600px) {
+  .my-pupil {
+    margin: 34px 33px 0px 45px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .my-pupil {
+    margin: 34px 46px 0px 45px;
+  }
+}
+@media (min-width: 960px) {
+  .my-pupil {
+    margin: 20px 36px 0px 33.87px;
+  }
+}
+@media (min-width: 960px) {
+  .my-pupil {
+    margin: 20px 36px 0px 35px;
+  }
+}
+@media (min-width: 1368px) {
+  .my-pupil {
+    margin: 20px 30px 0px 30px;
+  }
+}
+@media (min-width: 1700px) {
+  .my-pupil {
+    margin: 20px 86px 21px 30px;
+  }
+}
+@media (min-width: 2160px) {
+  .my-pupil {
+    margin: 39px 59.53px 21px 52px;
+  }
+}
+.my-pupil__label {
+  margin: 0px 0px 19px 0px;
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 40px;
+}
+@media (min-width: 320px) {
+  .my-pupil__label {
+    text-align: center;
+  }
+}
+.my-pupil__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 5px 0px;
+}
+@media (min-width: 320px) {
+  .my-pupil__menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.my-pupil__pupils {
+  margin: 0px 20px 0px 0px;
+  color: #235390;
+}
+.my-pupil__groups {
+  color: #C200AF;
+}
+.my-pupil__line {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-bottom: 0px solid #F7F7F7;
+  margin: 0px 0px 20px 0px;
+}
+@media (min-width: 320px) {
+  .my-pupil__line {
+    width: 130%;
+    margin: 0px 0px 20px -28px;
+  }
+}
+.my-pupil__line-pupils {
+  width: 61px;
+  border-bottom: 2px solid #235390;
+  margin: -2px 0px 0px 1px;
+}
+@media (min-width: 320px) {
+  .my-pupil__line-pupils {
+    margin: -2px 0px 0px 55px;
+  }
+}
+.my-pupil__line-groups {
+  width: 55px;
+  border-bottom: 2px solid #C200AF;
+}
+@media (min-width: 320px) {
+  .my-pupil__line-groups {
+    margin: -2px 0px 0px 136px;
+  }
+}
+.my-pupil__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 320px) {
+  .my-pupil__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 600px) {
+  .my-pupil__bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.my-pupil__bottom-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.my-pupil__bottom-left__add-pupil {
+  width: 184px;
+  height: 43px;
+  border: 2px solid #235390;
+  border-radius: 10px;
+  color: #235390;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 14px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.my-pupil__bottom-left__add-pupil-circle {
+  width: 25px;
+  height: 25px;
+  background: #235390;
+  border-radius: 50%;
+  margin: 0px 5px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.my-pupil__bottom-left__add-pupil-plus {
+  width: 12.95px;
+  height: 13px;
+}
+.my-pupil__bottom-left__add-pupil-text {
+  line-height: 20.46px;
+}
+.my-pupil__bottom-left__add-group {
+  width: 184px;
+  height: 43px;
+  border: 2px solid #C200AF;
+  border-radius: 10px;
+  color: #C200AF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.my-pupil__bottom-left__add-group-circle {
+  width: 25px;
+  height: 25px;
+  background: #C200AF;
+  border-radius: 50%;
+  margin: 0px 5px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.my-pupil__bottom-left__add-group-plus {
+  width: 12.95px;
+  height: 13px;
+}
+.my-pupil__bottom-left__add-group-text {
+  line-height: 20.46px;
+}
+.my-pupil__bottom-on-click {
+  width: 100%;
+  margin: 0px 31px 0px 0px;
+}
+.my-pupil__bottom-right {
+  margin: 0px 0px 0px 30px;
+  width: 100%;
+  height: 100px;
+  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgb(174,174,174); stroke-width: 5; stroke-dasharray: 15 10'/></svg>");
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #AEAEAE;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+}
+@media (min-width: 320px) {
+  .my-pupil__bottom-right {
+    margin: 24px 0px 0px 0px;
+  }
+}
+@media (min-width: 600px) {
+  .my-pupil__bottom-right {
+    margin: 0px 0px 0px 30px;
+  }
+}
+.my-pupil__bottom-right__all-your-pupils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 27px;
+}
+@media (min-width: 320px) {
+  .my-pupil__bottom-right__all-your-pupils-text {
+    margin: 0px 0px 0px 13.33px;
+  }
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 1;
+}
+
+.schedule {
+  padding: 16px 30.19px 56px 30px;
+  margin: 17px 30px 21px 30px;
+  -webkit-box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  height: 1134px;
+}
+@media (min-width: 2160px) {
+  .schedule {
+    margin: 17px 59.53px 21px 52px;
+  }
+}
+.schedule__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.schedule__header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.schedule__header__left-schedule {
+  margin: 0px 15px 0px 0px;
+  color: #235390;
+}
+.schedule__header__left-marks {
+  color: #C200AF;
+}
+.schedule__line {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-bottom: 0px solid #F7F7F7;
+  margin: 5px 0px 20px 0px;
+}
+.schedule__line-schedule {
+  width: 85px;
+  border-bottom: 2px solid #235390;
+  margin: -2px 0px 0px 1px;
+}
+.schedule__line-marks {
+  width: 102px;
+  border-bottom: 2px solid #C200AF;
+  margin: -2px 0px 0px 103px;
+}
+.schedule__content {
+  margin: 22px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.04), 1px 1px 20px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+.schedule__days {
+  height: 73px;
+  background: #F1FCFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 0px 0px;
+  padding-left: 52.13px;
+}
+.schedule__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: -70px 0px 80px 0px;
+  padding: 70px 0px 0px 0px;
+  height: 100%;
+  width: 62.13px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-right: 1px solid #E2E2E2;
+}
+.schedule__time-template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  border-bottom: 1px solid #E2E2E2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.schedule__time-template:last-child {
+  border-bottom: none;
+  margin: 0px 0px -1px 0px;
+}
+.schedule__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  height: 1015px;
+  margin: -1072px 0px 0px 61.13px;
+  padding: 0px 0px 70.5px 0px;
+  text-align: center;
+}
+.schedule__grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.schedule__grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.schedule__grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.schedule__grid > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+.schedule__grid > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.schedule__grid > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+}
+.schedule__grid > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.schedule__grid-circle {
+  width: 20px;
+  height: 20px;
+  background: #235390;
+  border-radius: 50%;
+  margin: 0px 0px 0px 0px;
+  display: none;
+}
+.schedule__grid-text {
+  display: none;
+}
+.schedule__grid-1, .schedule__grid-2, .schedule__grid-3, .schedule__grid-4, .schedule__grid-5, .schedule__grid-6, .schedule__grid-7, .schedule__grid-8, .schedule__grid-9, .schedule__grid-10, .schedule__grid-11, .schedule__grid-12, .schedule__grid-13, .schedule__grid-14, .schedule__grid-15, .schedule__grid-16, .schedule__grid-17, .schedule__grid-18, .schedule__grid-19, .schedule__grid-20, .schedule__grid-21, .schedule__grid-22, .schedule__grid-23, .schedule__grid-24, .schedule__grid-25, .schedule__grid-26, .schedule__grid-27, .schedule__grid-28, .schedule__grid-29, .schedule__grid-30, .schedule__grid-31, .schedule__grid-32, .schedule__grid-33, .schedule__grid-34, .schedule__grid-35, .schedule__grid-36, .schedule__grid-37, .schedule__grid-38, .schedule__grid-39, .schedule__grid-40, .schedule__grid-41, .schedule__grid-42, .schedule__grid-43, .schedule__grid-44, .schedule__grid-45, .schedule__grid-46, .schedule__grid-47, .schedule__grid-48, .schedule__grid-49, .schedule__grid-50, .schedule__grid-51, .schedule__grid-52, .schedule__grid-53, .schedule__grid-54, .schedule__grid-55, .schedule__grid-56, .schedule__grid-57, .schedule__grid-58, .schedule__grid-59, .schedule__grid-60, .schedule__grid-61, .schedule__grid-62, .schedule__grid-63, .schedule__grid-64, .schedule__grid-65, .schedule__grid-66, .schedule__grid-67, .schedule__grid-68, .schedule__grid-69, .schedule__grid-70, .schedule__grid-71, .schedule__grid-72, .schedule__grid-73, .schedule__grid-74, .schedule__grid-75, .schedule__grid-76, .schedule__grid-77, .schedule__grid-78, .schedule__grid-79, .schedule__grid-80, .schedule__grid-81, .schedule__grid-82, .schedule__grid-83, .schedule__grid-84, .schedule__grid-85, .schedule__grid-86, .schedule__grid-87, .schedule__grid-88, .schedule__grid-89, .schedule__grid-90, .schedule__grid-91, .schedule__grid-92, .schedule__grid-93, .schedule__grid-94, .schedule__grid-95, .schedule__grid-96, .schedule__grid-97, .schedule__grid-98, .schedule__grid-83, .schedule__grid-84, .schedule__grid-85, .schedule__grid-86, .schedule__grid-87, .schedule__grid-88, .schedule__grid-89, .schedule__grid-90, .schedule__grid-91, .schedule__grid-92, .schedule__grid-93, .schedule__grid-94, .schedule__grid-95, .schedule__grid-96, .schedule__grid-97, .schedule__grid-98, .schedule__grid-99, .schedule__grid-100, .schedule__grid-101, .schedule__grid-102, .schedule__grid-103, .schedule__grid-104, .schedule__grid-105, .schedule__grid-106, .schedule__grid-107, .schedule__grid-108, .schedule__grid-109, .schedule__grid-110, .schedule__grid-111, .schedule__grid-112, .schedule__grid-113, .schedule__grid-114, .schedule__grid-115, .schedule__grid-116, .schedule__grid-117, .schedule__grid-118, .schedule__grid-119, .schedule__grid-120, .schedule__grid-121, .schedule__grid-122, .schedule__grid-123, .schedule__grid-124, .schedule__grid-125, .schedule__grid-126, .schedule__grid-127, .schedule__grid-128, .schedule__grid-129, .schedule__grid-130, .schedule__grid-131, .schedule__grid-132, .schedule__grid-133 {
+  border-bottom: 1px solid #E2E2E2;
+}
+.schedule__grid-1-inside, .schedule__grid-2-inside, .schedule__grid-3-inside, .schedule__grid-4-inside, .schedule__grid-5-inside, .schedule__grid-6-inside, .schedule__grid-7-inside, .schedule__grid-8-inside, .schedule__grid-9-inside, .schedule__grid-10-inside, .schedule__grid-11-inside, .schedule__grid-12-inside, .schedule__grid-13-inside, .schedule__grid-14-inside, .schedule__grid-15-inside, .schedule__grid-16-inside, .schedule__grid-17-inside, .schedule__grid-18-inside, .schedule__grid-19-inside, .schedule__grid-20-inside, .schedule__grid-21-inside, .schedule__grid-22-inside, .schedule__grid-23-inside, .schedule__grid-24-inside, .schedule__grid-25-inside, .schedule__grid-26-inside, .schedule__grid-27-inside, .schedule__grid-28-inside, .schedule__grid-29-inside, .schedule__grid-30-inside, .schedule__grid-31-inside, .schedule__grid-32-inside, .schedule__grid-33-inside, .schedule__grid-34-inside, .schedule__grid-35-inside, .schedule__grid-36-inside, .schedule__grid-37-inside, .schedule__grid-38-inside, .schedule__grid-39-inside, .schedule__grid-40-inside, .schedule__grid-41-inside, .schedule__grid-42-inside, .schedule__grid-43-inside, .schedule__grid-44-inside, .schedule__grid-45-inside, .schedule__grid-46-inside, .schedule__grid-47-inside, .schedule__grid-48-inside, .schedule__grid-49-inside, .schedule__grid-50-inside, .schedule__grid-51-inside, .schedule__grid-52-inside, .schedule__grid-53-inside, .schedule__grid-54-inside, .schedule__grid-55-inside, .schedule__grid-56-inside, .schedule__grid-57-inside, .schedule__grid-58-inside, .schedule__grid-59-inside, .schedule__grid-60-inside, .schedule__grid-61-inside, .schedule__grid-62-inside, .schedule__grid-63-inside, .schedule__grid-64-inside, .schedule__grid-65-inside, .schedule__grid-66-inside, .schedule__grid-67-inside, .schedule__grid-68-inside, .schedule__grid-69-inside, .schedule__grid-70-inside, .schedule__grid-71-inside, .schedule__grid-72-inside, .schedule__grid-73-inside, .schedule__grid-74-inside, .schedule__grid-75-inside, .schedule__grid-76-inside, .schedule__grid-77-inside, .schedule__grid-78-inside, .schedule__grid-79-inside, .schedule__grid-80-inside, .schedule__grid-81-inside, .schedule__grid-82-inside, .schedule__grid-83-inside, .schedule__grid-84-inside, .schedule__grid-85-inside, .schedule__grid-86-inside, .schedule__grid-87-inside, .schedule__grid-88-inside, .schedule__grid-89-inside, .schedule__grid-90-inside, .schedule__grid-91-inside, .schedule__grid-92-inside, .schedule__grid-93-inside, .schedule__grid-94-inside, .schedule__grid-95-inside, .schedule__grid-96-inside, .schedule__grid-97-inside, .schedule__grid-98-inside, .schedule__grid-83-inside, .schedule__grid-84-inside, .schedule__grid-85-inside, .schedule__grid-86-inside, .schedule__grid-87-inside, .schedule__grid-88-inside, .schedule__grid-89-inside, .schedule__grid-90-inside, .schedule__grid-91-inside, .schedule__grid-92-inside, .schedule__grid-93-inside, .schedule__grid-94-inside, .schedule__grid-95-inside, .schedule__grid-96-inside, .schedule__grid-97-inside, .schedule__grid-98-inside, .schedule__grid-99-inside, .schedule__grid-100-inside, .schedule__grid-101-inside, .schedule__grid-102-inside, .schedule__grid-103-inside, .schedule__grid-104-inside, .schedule__grid-105-inside, .schedule__grid-106-inside, .schedule__grid-107-inside, .schedule__grid-108-inside, .schedule__grid-109-inside, .schedule__grid-110-inside, .schedule__grid-111-inside, .schedule__grid-112-inside, .schedule__grid-113-inside, .schedule__grid-114-inside, .schedule__grid-115-inside, .schedule__grid-116-inside, .schedule__grid-117-inside, .schedule__grid-118-inside, .schedule__grid-119-inside, .schedule__grid-120-inside, .schedule__grid-121-inside, .schedule__grid-122-inside, .schedule__grid-123-inside, .schedule__grid-124-inside, .schedule__grid-125-inside, .schedule__grid-126-inside, .schedule__grid-127-inside, .schedule__grid-128-inside, .schedule__grid-129-inside, .schedule__grid-130-inside, .schedule__grid-131-inside, .schedule__grid-132-inside, .schedule__grid-133-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.schedule__grid-1-inside:hover, .schedule__grid-2-inside:hover, .schedule__grid-3-inside:hover, .schedule__grid-4-inside:hover, .schedule__grid-5-inside:hover, .schedule__grid-6-inside:hover, .schedule__grid-7-inside:hover, .schedule__grid-8-inside:hover, .schedule__grid-9-inside:hover, .schedule__grid-10-inside:hover, .schedule__grid-11-inside:hover, .schedule__grid-12-inside:hover, .schedule__grid-13-inside:hover, .schedule__grid-14-inside:hover, .schedule__grid-15-inside:hover, .schedule__grid-16-inside:hover, .schedule__grid-17-inside:hover, .schedule__grid-18-inside:hover, .schedule__grid-19-inside:hover, .schedule__grid-20-inside:hover, .schedule__grid-21-inside:hover, .schedule__grid-22-inside:hover, .schedule__grid-23-inside:hover, .schedule__grid-24-inside:hover, .schedule__grid-25-inside:hover, .schedule__grid-26-inside:hover, .schedule__grid-27-inside:hover, .schedule__grid-28-inside:hover, .schedule__grid-29-inside:hover, .schedule__grid-30-inside:hover, .schedule__grid-31-inside:hover, .schedule__grid-32-inside:hover, .schedule__grid-33-inside:hover, .schedule__grid-34-inside:hover, .schedule__grid-35-inside:hover, .schedule__grid-36-inside:hover, .schedule__grid-37-inside:hover, .schedule__grid-38-inside:hover, .schedule__grid-39-inside:hover, .schedule__grid-40-inside:hover, .schedule__grid-41-inside:hover, .schedule__grid-42-inside:hover, .schedule__grid-43-inside:hover, .schedule__grid-44-inside:hover, .schedule__grid-45-inside:hover, .schedule__grid-46-inside:hover, .schedule__grid-47-inside:hover, .schedule__grid-48-inside:hover, .schedule__grid-49-inside:hover, .schedule__grid-50-inside:hover, .schedule__grid-51-inside:hover, .schedule__grid-52-inside:hover, .schedule__grid-53-inside:hover, .schedule__grid-54-inside:hover, .schedule__grid-55-inside:hover, .schedule__grid-56-inside:hover, .schedule__grid-57-inside:hover, .schedule__grid-58-inside:hover, .schedule__grid-59-inside:hover, .schedule__grid-60-inside:hover, .schedule__grid-61-inside:hover, .schedule__grid-62-inside:hover, .schedule__grid-63-inside:hover, .schedule__grid-64-inside:hover, .schedule__grid-65-inside:hover, .schedule__grid-66-inside:hover, .schedule__grid-67-inside:hover, .schedule__grid-68-inside:hover, .schedule__grid-69-inside:hover, .schedule__grid-70-inside:hover, .schedule__grid-71-inside:hover, .schedule__grid-72-inside:hover, .schedule__grid-73-inside:hover, .schedule__grid-74-inside:hover, .schedule__grid-75-inside:hover, .schedule__grid-76-inside:hover, .schedule__grid-77-inside:hover, .schedule__grid-78-inside:hover, .schedule__grid-79-inside:hover, .schedule__grid-80-inside:hover, .schedule__grid-81-inside:hover, .schedule__grid-82-inside:hover, .schedule__grid-83-inside:hover, .schedule__grid-84-inside:hover, .schedule__grid-85-inside:hover, .schedule__grid-86-inside:hover, .schedule__grid-87-inside:hover, .schedule__grid-88-inside:hover, .schedule__grid-89-inside:hover, .schedule__grid-90-inside:hover, .schedule__grid-91-inside:hover, .schedule__grid-92-inside:hover, .schedule__grid-93-inside:hover, .schedule__grid-94-inside:hover, .schedule__grid-95-inside:hover, .schedule__grid-96-inside:hover, .schedule__grid-97-inside:hover, .schedule__grid-98-inside:hover, .schedule__grid-83-inside:hover, .schedule__grid-84-inside:hover, .schedule__grid-85-inside:hover, .schedule__grid-86-inside:hover, .schedule__grid-87-inside:hover, .schedule__grid-88-inside:hover, .schedule__grid-89-inside:hover, .schedule__grid-90-inside:hover, .schedule__grid-91-inside:hover, .schedule__grid-92-inside:hover, .schedule__grid-93-inside:hover, .schedule__grid-94-inside:hover, .schedule__grid-95-inside:hover, .schedule__grid-96-inside:hover, .schedule__grid-97-inside:hover, .schedule__grid-98-inside:hover, .schedule__grid-99-inside:hover, .schedule__grid-100-inside:hover, .schedule__grid-101-inside:hover, .schedule__grid-102-inside:hover, .schedule__grid-103-inside:hover, .schedule__grid-104-inside:hover, .schedule__grid-105-inside:hover, .schedule__grid-106-inside:hover, .schedule__grid-107-inside:hover, .schedule__grid-108-inside:hover, .schedule__grid-109-inside:hover, .schedule__grid-110-inside:hover, .schedule__grid-111-inside:hover, .schedule__grid-112-inside:hover, .schedule__grid-113-inside:hover, .schedule__grid-114-inside:hover, .schedule__grid-115-inside:hover, .schedule__grid-116-inside:hover, .schedule__grid-117-inside:hover, .schedule__grid-118-inside:hover, .schedule__grid-119-inside:hover, .schedule__grid-120-inside:hover, .schedule__grid-121-inside:hover, .schedule__grid-122-inside:hover, .schedule__grid-123-inside:hover, .schedule__grid-124-inside:hover, .schedule__grid-125-inside:hover, .schedule__grid-126-inside:hover, .schedule__grid-127-inside:hover, .schedule__grid-128-inside:hover, .schedule__grid-129-inside:hover, .schedule__grid-130-inside:hover, .schedule__grid-131-inside:hover, .schedule__grid-132-inside:hover, .schedule__grid-133-inside:hover {
+  border: 2px dashed #235390;
+  height: 80%;
+  margin: -13px 0px -10px 0px;
+  width: 80%;
+  border-radius: 5px;
+  position: relative;
+  top: 37%;
+  left: 5%;
+}
+.schedule__grid-1-inside:hover .schedule__grid-circle, .schedule__grid-2-inside:hover .schedule__grid-circle, .schedule__grid-3-inside:hover .schedule__grid-circle, .schedule__grid-4-inside:hover .schedule__grid-circle, .schedule__grid-5-inside:hover .schedule__grid-circle, .schedule__grid-6-inside:hover .schedule__grid-circle, .schedule__grid-7-inside:hover .schedule__grid-circle, .schedule__grid-8-inside:hover .schedule__grid-circle, .schedule__grid-9-inside:hover .schedule__grid-circle, .schedule__grid-10-inside:hover .schedule__grid-circle, .schedule__grid-11-inside:hover .schedule__grid-circle, .schedule__grid-12-inside:hover .schedule__grid-circle, .schedule__grid-13-inside:hover .schedule__grid-circle, .schedule__grid-14-inside:hover .schedule__grid-circle, .schedule__grid-15-inside:hover .schedule__grid-circle, .schedule__grid-16-inside:hover .schedule__grid-circle, .schedule__grid-17-inside:hover .schedule__grid-circle, .schedule__grid-18-inside:hover .schedule__grid-circle, .schedule__grid-19-inside:hover .schedule__grid-circle, .schedule__grid-20-inside:hover .schedule__grid-circle, .schedule__grid-21-inside:hover .schedule__grid-circle, .schedule__grid-22-inside:hover .schedule__grid-circle, .schedule__grid-23-inside:hover .schedule__grid-circle, .schedule__grid-24-inside:hover .schedule__grid-circle, .schedule__grid-25-inside:hover .schedule__grid-circle, .schedule__grid-26-inside:hover .schedule__grid-circle, .schedule__grid-27-inside:hover .schedule__grid-circle, .schedule__grid-28-inside:hover .schedule__grid-circle, .schedule__grid-29-inside:hover .schedule__grid-circle, .schedule__grid-30-inside:hover .schedule__grid-circle, .schedule__grid-31-inside:hover .schedule__grid-circle, .schedule__grid-32-inside:hover .schedule__grid-circle, .schedule__grid-33-inside:hover .schedule__grid-circle, .schedule__grid-34-inside:hover .schedule__grid-circle, .schedule__grid-35-inside:hover .schedule__grid-circle, .schedule__grid-36-inside:hover .schedule__grid-circle, .schedule__grid-37-inside:hover .schedule__grid-circle, .schedule__grid-38-inside:hover .schedule__grid-circle, .schedule__grid-39-inside:hover .schedule__grid-circle, .schedule__grid-40-inside:hover .schedule__grid-circle, .schedule__grid-41-inside:hover .schedule__grid-circle, .schedule__grid-42-inside:hover .schedule__grid-circle, .schedule__grid-43-inside:hover .schedule__grid-circle, .schedule__grid-44-inside:hover .schedule__grid-circle, .schedule__grid-45-inside:hover .schedule__grid-circle, .schedule__grid-46-inside:hover .schedule__grid-circle, .schedule__grid-47-inside:hover .schedule__grid-circle, .schedule__grid-48-inside:hover .schedule__grid-circle, .schedule__grid-49-inside:hover .schedule__grid-circle, .schedule__grid-50-inside:hover .schedule__grid-circle, .schedule__grid-51-inside:hover .schedule__grid-circle, .schedule__grid-52-inside:hover .schedule__grid-circle, .schedule__grid-53-inside:hover .schedule__grid-circle, .schedule__grid-54-inside:hover .schedule__grid-circle, .schedule__grid-55-inside:hover .schedule__grid-circle, .schedule__grid-56-inside:hover .schedule__grid-circle, .schedule__grid-57-inside:hover .schedule__grid-circle, .schedule__grid-58-inside:hover .schedule__grid-circle, .schedule__grid-59-inside:hover .schedule__grid-circle, .schedule__grid-60-inside:hover .schedule__grid-circle, .schedule__grid-61-inside:hover .schedule__grid-circle, .schedule__grid-62-inside:hover .schedule__grid-circle, .schedule__grid-63-inside:hover .schedule__grid-circle, .schedule__grid-64-inside:hover .schedule__grid-circle, .schedule__grid-65-inside:hover .schedule__grid-circle, .schedule__grid-66-inside:hover .schedule__grid-circle, .schedule__grid-67-inside:hover .schedule__grid-circle, .schedule__grid-68-inside:hover .schedule__grid-circle, .schedule__grid-69-inside:hover .schedule__grid-circle, .schedule__grid-70-inside:hover .schedule__grid-circle, .schedule__grid-71-inside:hover .schedule__grid-circle, .schedule__grid-72-inside:hover .schedule__grid-circle, .schedule__grid-73-inside:hover .schedule__grid-circle, .schedule__grid-74-inside:hover .schedule__grid-circle, .schedule__grid-75-inside:hover .schedule__grid-circle, .schedule__grid-76-inside:hover .schedule__grid-circle, .schedule__grid-77-inside:hover .schedule__grid-circle, .schedule__grid-78-inside:hover .schedule__grid-circle, .schedule__grid-79-inside:hover .schedule__grid-circle, .schedule__grid-80-inside:hover .schedule__grid-circle, .schedule__grid-81-inside:hover .schedule__grid-circle, .schedule__grid-82-inside:hover .schedule__grid-circle, .schedule__grid-83-inside:hover .schedule__grid-circle, .schedule__grid-84-inside:hover .schedule__grid-circle, .schedule__grid-85-inside:hover .schedule__grid-circle, .schedule__grid-86-inside:hover .schedule__grid-circle, .schedule__grid-87-inside:hover .schedule__grid-circle, .schedule__grid-88-inside:hover .schedule__grid-circle, .schedule__grid-89-inside:hover .schedule__grid-circle, .schedule__grid-90-inside:hover .schedule__grid-circle, .schedule__grid-91-inside:hover .schedule__grid-circle, .schedule__grid-92-inside:hover .schedule__grid-circle, .schedule__grid-93-inside:hover .schedule__grid-circle, .schedule__grid-94-inside:hover .schedule__grid-circle, .schedule__grid-95-inside:hover .schedule__grid-circle, .schedule__grid-96-inside:hover .schedule__grid-circle, .schedule__grid-97-inside:hover .schedule__grid-circle, .schedule__grid-98-inside:hover .schedule__grid-circle, .schedule__grid-83-inside:hover .schedule__grid-circle, .schedule__grid-84-inside:hover .schedule__grid-circle, .schedule__grid-85-inside:hover .schedule__grid-circle, .schedule__grid-86-inside:hover .schedule__grid-circle, .schedule__grid-87-inside:hover .schedule__grid-circle, .schedule__grid-88-inside:hover .schedule__grid-circle, .schedule__grid-89-inside:hover .schedule__grid-circle, .schedule__grid-90-inside:hover .schedule__grid-circle, .schedule__grid-91-inside:hover .schedule__grid-circle, .schedule__grid-92-inside:hover .schedule__grid-circle, .schedule__grid-93-inside:hover .schedule__grid-circle, .schedule__grid-94-inside:hover .schedule__grid-circle, .schedule__grid-95-inside:hover .schedule__grid-circle, .schedule__grid-96-inside:hover .schedule__grid-circle, .schedule__grid-97-inside:hover .schedule__grid-circle, .schedule__grid-98-inside:hover .schedule__grid-circle, .schedule__grid-99-inside:hover .schedule__grid-circle, .schedule__grid-100-inside:hover .schedule__grid-circle, .schedule__grid-101-inside:hover .schedule__grid-circle, .schedule__grid-102-inside:hover .schedule__grid-circle, .schedule__grid-103-inside:hover .schedule__grid-circle, .schedule__grid-104-inside:hover .schedule__grid-circle, .schedule__grid-105-inside:hover .schedule__grid-circle, .schedule__grid-106-inside:hover .schedule__grid-circle, .schedule__grid-107-inside:hover .schedule__grid-circle, .schedule__grid-108-inside:hover .schedule__grid-circle, .schedule__grid-109-inside:hover .schedule__grid-circle, .schedule__grid-110-inside:hover .schedule__grid-circle, .schedule__grid-111-inside:hover .schedule__grid-circle, .schedule__grid-112-inside:hover .schedule__grid-circle, .schedule__grid-113-inside:hover .schedule__grid-circle, .schedule__grid-114-inside:hover .schedule__grid-circle, .schedule__grid-115-inside:hover .schedule__grid-circle, .schedule__grid-116-inside:hover .schedule__grid-circle, .schedule__grid-117-inside:hover .schedule__grid-circle, .schedule__grid-118-inside:hover .schedule__grid-circle, .schedule__grid-119-inside:hover .schedule__grid-circle, .schedule__grid-120-inside:hover .schedule__grid-circle, .schedule__grid-121-inside:hover .schedule__grid-circle, .schedule__grid-122-inside:hover .schedule__grid-circle, .schedule__grid-123-inside:hover .schedule__grid-circle, .schedule__grid-124-inside:hover .schedule__grid-circle, .schedule__grid-125-inside:hover .schedule__grid-circle, .schedule__grid-126-inside:hover .schedule__grid-circle, .schedule__grid-127-inside:hover .schedule__grid-circle, .schedule__grid-128-inside:hover .schedule__grid-circle, .schedule__grid-129-inside:hover .schedule__grid-circle, .schedule__grid-130-inside:hover .schedule__grid-circle, .schedule__grid-131-inside:hover .schedule__grid-circle, .schedule__grid-132-inside:hover .schedule__grid-circle, .schedule__grid-133-inside:hover .schedule__grid-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.schedule__grid-1-inside:hover .schedule__grid-text, .schedule__grid-2-inside:hover .schedule__grid-text, .schedule__grid-3-inside:hover .schedule__grid-text, .schedule__grid-4-inside:hover .schedule__grid-text, .schedule__grid-5-inside:hover .schedule__grid-text, .schedule__grid-6-inside:hover .schedule__grid-text, .schedule__grid-7-inside:hover .schedule__grid-text, .schedule__grid-8-inside:hover .schedule__grid-text, .schedule__grid-9-inside:hover .schedule__grid-text, .schedule__grid-10-inside:hover .schedule__grid-text, .schedule__grid-11-inside:hover .schedule__grid-text, .schedule__grid-12-inside:hover .schedule__grid-text, .schedule__grid-13-inside:hover .schedule__grid-text, .schedule__grid-14-inside:hover .schedule__grid-text, .schedule__grid-15-inside:hover .schedule__grid-text, .schedule__grid-16-inside:hover .schedule__grid-text, .schedule__grid-17-inside:hover .schedule__grid-text, .schedule__grid-18-inside:hover .schedule__grid-text, .schedule__grid-19-inside:hover .schedule__grid-text, .schedule__grid-20-inside:hover .schedule__grid-text, .schedule__grid-21-inside:hover .schedule__grid-text, .schedule__grid-22-inside:hover .schedule__grid-text, .schedule__grid-23-inside:hover .schedule__grid-text, .schedule__grid-24-inside:hover .schedule__grid-text, .schedule__grid-25-inside:hover .schedule__grid-text, .schedule__grid-26-inside:hover .schedule__grid-text, .schedule__grid-27-inside:hover .schedule__grid-text, .schedule__grid-28-inside:hover .schedule__grid-text, .schedule__grid-29-inside:hover .schedule__grid-text, .schedule__grid-30-inside:hover .schedule__grid-text, .schedule__grid-31-inside:hover .schedule__grid-text, .schedule__grid-32-inside:hover .schedule__grid-text, .schedule__grid-33-inside:hover .schedule__grid-text, .schedule__grid-34-inside:hover .schedule__grid-text, .schedule__grid-35-inside:hover .schedule__grid-text, .schedule__grid-36-inside:hover .schedule__grid-text, .schedule__grid-37-inside:hover .schedule__grid-text, .schedule__grid-38-inside:hover .schedule__grid-text, .schedule__grid-39-inside:hover .schedule__grid-text, .schedule__grid-40-inside:hover .schedule__grid-text, .schedule__grid-41-inside:hover .schedule__grid-text, .schedule__grid-42-inside:hover .schedule__grid-text, .schedule__grid-43-inside:hover .schedule__grid-text, .schedule__grid-44-inside:hover .schedule__grid-text, .schedule__grid-45-inside:hover .schedule__grid-text, .schedule__grid-46-inside:hover .schedule__grid-text, .schedule__grid-47-inside:hover .schedule__grid-text, .schedule__grid-48-inside:hover .schedule__grid-text, .schedule__grid-49-inside:hover .schedule__grid-text, .schedule__grid-50-inside:hover .schedule__grid-text, .schedule__grid-51-inside:hover .schedule__grid-text, .schedule__grid-52-inside:hover .schedule__grid-text, .schedule__grid-53-inside:hover .schedule__grid-text, .schedule__grid-54-inside:hover .schedule__grid-text, .schedule__grid-55-inside:hover .schedule__grid-text, .schedule__grid-56-inside:hover .schedule__grid-text, .schedule__grid-57-inside:hover .schedule__grid-text, .schedule__grid-58-inside:hover .schedule__grid-text, .schedule__grid-59-inside:hover .schedule__grid-text, .schedule__grid-60-inside:hover .schedule__grid-text, .schedule__grid-61-inside:hover .schedule__grid-text, .schedule__grid-62-inside:hover .schedule__grid-text, .schedule__grid-63-inside:hover .schedule__grid-text, .schedule__grid-64-inside:hover .schedule__grid-text, .schedule__grid-65-inside:hover .schedule__grid-text, .schedule__grid-66-inside:hover .schedule__grid-text, .schedule__grid-67-inside:hover .schedule__grid-text, .schedule__grid-68-inside:hover .schedule__grid-text, .schedule__grid-69-inside:hover .schedule__grid-text, .schedule__grid-70-inside:hover .schedule__grid-text, .schedule__grid-71-inside:hover .schedule__grid-text, .schedule__grid-72-inside:hover .schedule__grid-text, .schedule__grid-73-inside:hover .schedule__grid-text, .schedule__grid-74-inside:hover .schedule__grid-text, .schedule__grid-75-inside:hover .schedule__grid-text, .schedule__grid-76-inside:hover .schedule__grid-text, .schedule__grid-77-inside:hover .schedule__grid-text, .schedule__grid-78-inside:hover .schedule__grid-text, .schedule__grid-79-inside:hover .schedule__grid-text, .schedule__grid-80-inside:hover .schedule__grid-text, .schedule__grid-81-inside:hover .schedule__grid-text, .schedule__grid-82-inside:hover .schedule__grid-text, .schedule__grid-83-inside:hover .schedule__grid-text, .schedule__grid-84-inside:hover .schedule__grid-text, .schedule__grid-85-inside:hover .schedule__grid-text, .schedule__grid-86-inside:hover .schedule__grid-text, .schedule__grid-87-inside:hover .schedule__grid-text, .schedule__grid-88-inside:hover .schedule__grid-text, .schedule__grid-89-inside:hover .schedule__grid-text, .schedule__grid-90-inside:hover .schedule__grid-text, .schedule__grid-91-inside:hover .schedule__grid-text, .schedule__grid-92-inside:hover .schedule__grid-text, .schedule__grid-93-inside:hover .schedule__grid-text, .schedule__grid-94-inside:hover .schedule__grid-text, .schedule__grid-95-inside:hover .schedule__grid-text, .schedule__grid-96-inside:hover .schedule__grid-text, .schedule__grid-97-inside:hover .schedule__grid-text, .schedule__grid-98-inside:hover .schedule__grid-text, .schedule__grid-83-inside:hover .schedule__grid-text, .schedule__grid-84-inside:hover .schedule__grid-text, .schedule__grid-85-inside:hover .schedule__grid-text, .schedule__grid-86-inside:hover .schedule__grid-text, .schedule__grid-87-inside:hover .schedule__grid-text, .schedule__grid-88-inside:hover .schedule__grid-text, .schedule__grid-89-inside:hover .schedule__grid-text, .schedule__grid-90-inside:hover .schedule__grid-text, .schedule__grid-91-inside:hover .schedule__grid-text, .schedule__grid-92-inside:hover .schedule__grid-text, .schedule__grid-93-inside:hover .schedule__grid-text, .schedule__grid-94-inside:hover .schedule__grid-text, .schedule__grid-95-inside:hover .schedule__grid-text, .schedule__grid-96-inside:hover .schedule__grid-text, .schedule__grid-97-inside:hover .schedule__grid-text, .schedule__grid-98-inside:hover .schedule__grid-text, .schedule__grid-99-inside:hover .schedule__grid-text, .schedule__grid-100-inside:hover .schedule__grid-text, .schedule__grid-101-inside:hover .schedule__grid-text, .schedule__grid-102-inside:hover .schedule__grid-text, .schedule__grid-103-inside:hover .schedule__grid-text, .schedule__grid-104-inside:hover .schedule__grid-text, .schedule__grid-105-inside:hover .schedule__grid-text, .schedule__grid-106-inside:hover .schedule__grid-text, .schedule__grid-107-inside:hover .schedule__grid-text, .schedule__grid-108-inside:hover .schedule__grid-text, .schedule__grid-109-inside:hover .schedule__grid-text, .schedule__grid-110-inside:hover .schedule__grid-text, .schedule__grid-111-inside:hover .schedule__grid-text, .schedule__grid-112-inside:hover .schedule__grid-text, .schedule__grid-113-inside:hover .schedule__grid-text, .schedule__grid-114-inside:hover .schedule__grid-text, .schedule__grid-115-inside:hover .schedule__grid-text, .schedule__grid-116-inside:hover .schedule__grid-text, .schedule__grid-117-inside:hover .schedule__grid-text, .schedule__grid-118-inside:hover .schedule__grid-text, .schedule__grid-119-inside:hover .schedule__grid-text, .schedule__grid-120-inside:hover .schedule__grid-text, .schedule__grid-121-inside:hover .schedule__grid-text, .schedule__grid-122-inside:hover .schedule__grid-text, .schedule__grid-123-inside:hover .schedule__grid-text, .schedule__grid-124-inside:hover .schedule__grid-text, .schedule__grid-125-inside:hover .schedule__grid-text, .schedule__grid-126-inside:hover .schedule__grid-text, .schedule__grid-127-inside:hover .schedule__grid-text, .schedule__grid-128-inside:hover .schedule__grid-text, .schedule__grid-129-inside:hover .schedule__grid-text, .schedule__grid-130-inside:hover .schedule__grid-text, .schedule__grid-131-inside:hover .schedule__grid-text, .schedule__grid-132-inside:hover .schedule__grid-text, .schedule__grid-133-inside:hover .schedule__grid-text {
+  display: inline;
+  color: #235390;
+}
