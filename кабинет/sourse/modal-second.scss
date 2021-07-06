@@ -1,0 +1,171 @@
+.modal-second{
+    z-index:3;
+    position: absolute; 
+    width: 551px;
+    height: 280px;
+    //display: none;
+    background: #F5E6FE;
+    border-radius: 15px;   
+    padding: 23px 0px 17.23px 0px;
+    font-family: 'Nunito', sans-serif;
+
+    @media (min-width: 320px)  {
+        width: 96%;
+        height: 311px;
+        margin: 0px 8px 0px 8px;
+        padding: 18.84px 0px 15.08px 0px;
+        
+        
+    }
+
+   
+
+    @media (min-width:375px) {
+  
+    
+        
+    }
+
+    @media (min-width: 414px)  {
+        margin: 0px 16px 0px 16px;
+    }
+
+
+    @media (min-width:550px) {
+        width: 94%;
+    
+      
+    }
+  
+    @media (min-width:600px) {
+    
+  
+        width: 551px;
+        height: 303px;
+
+    }
+
+    &__label{
+        
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+
+        @media (min-width: 320px)  {
+            font-size: 15px;
+            line-height: 20.46px;
+            margin: 0px 0px 0px -5px;
+        }
+    }
+
+    &__line{
+        width: 100%;  
+        border-top: 1px solid #FFFFFF; 
+        margin: 10.8px 0px 0px 0px;
+     
+        @media (min-width: 320px)  {
+            margin: 10.8px 0px 45.34px 0px;
+        }
+
+        &-2{
+            width: 120%;  
+            border-top: 1px solid #FFFFFF; 
+            margin: 27.15px 0px 17.46px 0px;
+        }
+    }
+
+    &__exit{
+        color: #FF2500;
+        width: 22px;
+        height: 22px;
+        background: #FFB6AA;
+        border-radius: 5px;
+        padding: 4px 6px 6px 6px;
+        margin: -30px 24px 0px 0px;
+
+        &:hover{
+            background: #f59181; //СПРОСИТЬ КАКОЕ ДЕЙСТВИЕ ПРИ НАЖАТИИ
+        }
+
+        @media (min-width: 320px)  {
+            transform: scale(0.8);
+            margin: -35px 4px 0px 0px;
+        }
+
+        @media (min-width: 375px)  {
+            transform: scale(0.8);
+            margin: -35px 4px 0px 0px;
+        }
+    
+    }
+
+    &__content {
+ 
+        padding: 0px 46px 0px 25px;
+        display: flex;
+        flex-direction: column; 
+
+        @media (min-width: 320px)  {
+            align-items: center;
+            padding: 0px 21.43px 0px 22.22px;
+            margin: -10px 0px 0px 0px;           // ОТСЕБЯТИНА, ПОТОМУ ЧТО В МАКЕТЕ НЕТ ТОЧНОГО ЗНАЧЕНИЯ
+        }
+
+        @media (min-width: 375px)  {
+            width: 100%;
+            padding: 0px 0px 0px 0px;
+        }
+     
+    }
+
+    &__text{
+        text-align: center;
+        margin: 20.24px 0px 0px 0px;
+        line-height: 20.46px;
+
+        @media (min-width: 375px)  {
+            width: 323px;
+        }
+
+        @media (min-width: 600px)  {
+            width: 465px;
+        }
+    }
+
+    &__btn{
+        margin: 40px 0px 0px 131px;
+        width: 286px;
+        height: 40px; 
+        color: #FFFFFF;
+        background: #235390;
+        border-radius: 10px;
+        line-height: 20px;    
+        
+        font-weight: bold;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+
+        @media (min-width: 320px)  {
+            margin: 0px 0px 0px 0px;
+            width: 100%;
+            height: 31.75px;
+        }
+
+        @media (min-width: 375px)  {
+            width: 90%;
+            height: 36.45px;
+        }
+
+        @media (min-width: 414px)  {
+            padding: 0px 10px 0px 10px;
+            height: 40px;
+            width: 328px;
+        }
+
+    }
+}

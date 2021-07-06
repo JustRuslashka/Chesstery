@@ -1,0 +1,274 @@
+.modal-fourth{
+    z-index:3;
+
+
+    font-family: 'Nunito', sans-serif;
+    background: #F5E6FE;
+    border-radius: 15px;  
+	width: 551px;
+	height: 382px; 
+    padding: 23px 0px 17.23px 0px;
+    margin: 1150px 0px 0px 0px;
+
+    @media (min-width: 320px)  {
+
+		margin: 1150px 8px 0px 8px;
+	  }
+  
+	  @media (min-width:375px) {
+	
+	  }
+  
+	  @media (min-width: 414px)  {
+		 
+	  }
+  
+	  @media (min-width:600px) {
+	
+	  }
+  
+
+    &__label{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+
+        @media (min-width: 320px)  {
+            font-size: 15px;
+            line-height: 20.46px;
+            margin: 0px 0px 0px -5px;
+        }
+    }
+
+    &__line{
+        width: 100%;  
+        border-top: 1px solid #FFFFFF; 
+		margin: 12px 0px 32px 0px;
+        
+     
+        @media (min-width: 320px)  {
+       
+        }
+
+        &-2{
+            width: 110%;
+            border-bottom: 1px solid #FFFFFF;
+            margin: 485px 0px 0px 0px;
+        }
+    }
+
+    &__exit{
+        color: #FF2500;
+        width: 22px;
+        height: 22px;
+        background: #FFB6AA;
+        border-radius: 5px;
+        padding: 4px 6px 6px 6px;
+        margin: -30px 24px 0px 0px;
+
+        &:hover{
+            background: #f59181; //СПРОСИТЬ КАКОЕ ДЕЙСТВИЕ ПРИ НАЖАТИИ
+        }
+    }
+
+	&__content{
+		padding: 0px 111px 0px 77px;
+	}
+
+	&__lesson-time {
+        display: flex;
+        align-items: center;  
+    }
+
+    &__text {
+		width: 92px;
+		height: 20px;
+    }
+
+    &__day {
+        width: 100px;
+        height: 31px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 8px 0px 9px;
+       
+
+        &-text{
+  
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #545454;
+            margin: 0px 6px 0px 0px;
+        }
+
+        &-galochka{
+
+        }
+    }
+
+    &__at {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #545454;
+    }
+
+    &__hours {
+        width: 59px;
+        height: 31px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 8px 0px 8px;
+     
+
+        &-text{
+ 
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #545454;
+            margin: 0px 6px 0px 0px;
+        }
+
+        &-galochka{
+
+        }
+
+     
+    }
+
+    &__dvoetochiye{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #545454;
+    }
+
+    &__minutes {
+        width: 59px;
+        height: 31px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 8px 0px 8px;
+ 
+
+        &-text{
+      
+  
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #545454;
+            margin: 0px 6px 0px 0px;
+        }
+
+        &-galochka{
+
+        }
+    }
+
+	&__students {
+        margin: 15px 0px 0px 0px;
+     
+    
+    }
+
+    &__student {
+        height: 52px;
+        width: 98%;
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+        border-radius: 5px;
+       
+        
+        &:hover{
+            background-color: #EDD2FE;
+        }
+
+        &:active{
+            .modal-fourth__student-mins{
+                display: flex;
+            }
+          
+        }   
+
+        &-pic{
+            margin: 0px 11px 0px 15px;
+        }
+
+        &-name{
+            width: 143px;
+            height: 20px;
+        }
+
+        &-mins{
+       
+            width: 86px;
+            height: 186px;
+            margin: 155px 0px 0px 58px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            flex-wrap: wrap;
+            padding: 6px 9px 0px 7px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            color: #545454;
+            display: none;
+            z-index: 3;
+
+            &-default{
+                &-svg{
+                    margin: 0px 0px 2px 3px;
+                }
+            }
+          
+        }
+
+      
+    }
+
+	&__lesson-state {
+
+	}
+
+	&__lesson-state-label {
+		margin: 26px 0px 8px 0px;
+	}
+
+	&__lesson-state-box {
+	}
+
+	&__lesson-state-circle {
+	}
+
+	&__lesson-state-text {
+	}
+
+	&__btn {
+	}
+}

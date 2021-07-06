@@ -1,0 +1,229 @@
+.modal-first{
+    z-index:3;
+    position: absolute; 
+    width: 551px;
+    height: 280px;
+    display:none;
+    background: #F5E6FE;
+    border-radius: 15px;   
+    padding: 23px 0px 17.23px 0px;
+
+ 
+    @media (min-width: 320px)  {
+
+        width: 95%;
+        height: 271px;
+        margin: -125px 18px 0px -29px;
+        padding: 18.84px 0px 15.08px 0px;
+        
+  
+    }
+
+   
+
+    @media (min-width:375px) {
+        height: 271.46px;
+      
+    }
+
+    @media (min-width: 414px)  {
+        height: 279.25px;
+    }
+
+
+    @media (min-width:550px) {
+        width: 94%;
+        margin: -125px 18px 0px -29px;
+      
+    }
+  
+    @media (min-width:600px) {
+
+        left: 28.62%;
+        right: 28.62%;
+        top: 29.69%;
+        bottom: 33.85%;
+        width: 551px;
+        height: 280px;
+       
+    
+      
+    }
+
+    &__label{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+
+        @media (min-width: 320px)  {
+            font-size: 15px;
+            line-height: 20.46px;
+            margin: 0px 0px 0px -5px;
+        }
+    }
+
+    &__line{
+        width: 100%;  
+        border-top: 1px solid #FFFFFF; 
+        position: absolute;
+        top: 61px;
+     
+        @media (min-width: 320px)  {
+            top: 48px;
+        }
+
+
+        &-2{
+            top: 205px;
+
+            @media (min-width: 320px)  {
+                top: 207.16px;
+            }
+    
+        }
+    }
+
+    &__exit{
+        color: #FF2500;
+        width: 22px;
+        height: 22px;
+        background: #FFB6AA;
+        border-radius: 5px;
+        padding: 4px 6px 6px 6px;
+        margin: -30px 24px 0px 0px;
+
+        &:hover{
+            background: #f59181; //СПРОСИТЬ КАКОЕ ДЕЙСТВИЕ ПРИ НАЖАТИИ
+        }
+
+        @media (min-width: 320px)  {
+            transform: scale(0.8);
+            margin: -35px 4px 0px 0px;
+         
+        }
+    
+    }
+
+    &__content {
+        margin: 32px 0px 0px 0px; 
+        padding: 0px 46px 0px 25px;
+        display: flex;
+        flex-direction: column; 
+
+        @media (min-width: 320px)  {
+          
+            padding: 0px 21.43px 0px 22.22px;
+  
+        }
+     
+    }
+
+    &__call-pupil {
+        margin: 0px 0px 21px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 320px)  {
+            flex-direction: column;
+            margin: -20.18px 0px 14px 0px;
+      
+        }
+    
+
+        &__text{
+            width: 143px;
+            height: 20px;
+
+            @media (min-width: 320px)  {
+             
+                margin: 0px 0px 8.57px 0px;
+                text-align: center;
+            }
+        }
+
+        &__input{
+            width: 328px;
+            height: 31px;
+            padding: 5px 0px 6px 13px;
+            font-weight: 400;
+            border-radius: 5px;
+
+            @media (min-width: 320px)  {
+                flex-direction: column;
+                width: 100%;
+                height: 24.61px;
+            }
+        }
+    }
+
+    &__write-email {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        @media (min-width: 320px)  {
+            flex-direction: column;
+            
+          
+        }
+
+        &__text{
+            width: 143px;
+            height: 40px;
+            line-height: 20px;
+
+            @media (min-width: 320px)  {
+             
+                width: 110%;
+              
+                text-align: center;
+              
+            }
+        }
+
+        &__input{
+            width: 328px;
+            height: 31px;
+            padding: 5px 0px 6px 13px;
+            font-weight: 400;
+            border-radius: 5px;
+
+            @media (min-width: 320px)  {
+                flex-direction: column;
+                width: 100%;
+                height: 24.61px;
+                margin: -10px 0px 0px 0px;
+              
+            }
+        }
+    }
+
+    &__btn{
+        margin: 40px 0px 0px 131px;
+        width: 286px;
+        height: 40px; 
+        color: #FFFFFF;
+        background: #235390;
+        border-radius: 10px;
+        line-height: 20px;    
+
+        @media (min-width: 320px)  {
+            margin: 37.07px 0px 0px 0px;
+            width: 100%;
+            height: 31.75px;
+        }
+
+        @media (min-width: 375px)  {
+        
+            height: 36.45px;
+        }
+
+        @media (min-width: 414px)  {
+        
+            height: 40px;
+        }
+    }
+}
