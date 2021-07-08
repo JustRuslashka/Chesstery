@@ -54,7 +54,7 @@
 
         &-2{
             width: 110%;
-            margin: -90px 0px 0px 0px;
+            margin: -80px 0px 0px 0px;
         }
     }
 
@@ -82,8 +82,11 @@
     }
 
     &__text {
-		width: 92px;
+		width: 100px;
 		height: 20px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
     }
 
     &__day {
@@ -106,6 +109,7 @@
             align-items: center;
             color: #545454;
             margin: 0px 6px 0px 0px;
+            
         }
 
         &-galochka{
@@ -257,20 +261,62 @@
 
 	&__lesson-state-label {
 		margin: 26px 0px 8px 0px;
+        font-weight: bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
 	}
 
 	&__lesson-state-box {
        padding: 0px 0px 0px 8px;
         width: 363px;
         height: 33px;
-  
+   
         background: #F5E6FE;
         border: 1px solid #AAAAAA;
         box-sizing: border-box;
         border-radius: 10px;
         display: flex;
-        align-items: center;
+       
+
+        &:focus{
+            height: 65px;
+            flex-direction: column;
+            .modal-fourth__lesson-state-galochka{
+                transform: rotateZ(180deg);
+               
+            }
+            .modal-fourth__lesson-state-box__element-1{
+                margin: -25px 12px 0px 0px;
+            }
+
+            .modal-fourth__lesson-state-box__element-2{
+                display: flex;
+            }
+
+            .modal-fourth__lesson-state-text__student-failture{
+                display: flex;
+            }
+           
+            .modal-fourth__lesson-state-circle-2{
+                display: flex;
+            }
+
+        }
+
+        &__element-1{
+            display: flex;
+            align-items: center;
+        }
+
+        &__element-2{
+            display: none;
+            
+        }
 	}
+
+   
 
 	&__lesson-state-circle {
         margin: 0px 12px 0px 0px;
@@ -284,7 +330,22 @@
 	&__lesson-state-text {
         width: 231px;
         margin: 0px 68px 0px 0px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 23px;
+        color: #000000;
+
+        &__student-failture{
+            display: none;
+        }
 	}
+
+  
+    &__lesson-state-galochka{
+       
+        
+        
+    }
 
 	&__btns {
         margin: 45px 0px 0px 0px;

@@ -872,7 +872,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .modal-fourth__line-2 {
   width: 110%;
-  margin: -90px 0px 0px 0px;
+  margin: -80px 0px 0px 0px;
 }
 .modal-fourth__exit {
   color: #FF2500;
@@ -898,8 +898,11 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 .modal-fourth__text {
-  width: 92px;
+  width: 100px;
   height: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
 }
 .modal-fourth__day {
   width: 100px;
@@ -1067,6 +1070,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .modal-fourth__lesson-state-label {
   margin: 26px 0px 8px 0px;
+  font-weight: bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
 }
 .modal-fourth__lesson-state-box {
   padding: 0px 0px 0px 8px;
@@ -1080,9 +1088,47 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.modal-fourth__lesson-state-box:focus {
+  height: 65px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal-fourth__lesson-state-box:focus .modal-fourth__lesson-state-galochka {
+  -webkit-transform: rotateZ(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotateZ(180deg);
+}
+.modal-fourth__lesson-state-box:focus .modal-fourth__lesson-state-box__element-1 {
+  margin: -25px 12px 0px 0px;
+}
+.modal-fourth__lesson-state-box:focus .modal-fourth__lesson-state-box__element-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-fourth__lesson-state-box:focus .modal-fourth__lesson-state-text__student-failture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-fourth__lesson-state-box:focus .modal-fourth__lesson-state-circle-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-fourth__lesson-state-box__element-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.modal-fourth__lesson-state-box__element-2 {
+  display: none;
 }
 .modal-fourth__lesson-state-circle {
   margin: 0px 12px 0px 0px;
@@ -1094,6 +1140,13 @@ h1, h2, h3, h4, h5, h6 {
 .modal-fourth__lesson-state-text {
   width: 231px;
   margin: 0px 68px 0px 0px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  color: #000000;
+}
+.modal-fourth__lesson-state-text__student-failture {
+  display: none;
 }
 .modal-fourth__btns {
   margin: 45px 0px 0px 0px;
