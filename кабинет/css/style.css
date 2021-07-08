@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .modal-third__line {
   width: 100%;
-  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
   position: absolute;
   top: 61px;
 }
@@ -844,7 +844,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 551px;
   height: 382px;
   padding: 23px 0px 17.23px 0px;
-  margin: 1150px 0px 0px 0px;
+  margin: 1150px 0px 300px 0px;
 }
 @media (min-width: 320px) {
   .modal-fourth {
@@ -872,8 +872,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .modal-fourth__line-2 {
   width: 110%;
-  border-bottom: 1px solid #FFFFFF;
-  margin: 485px 0px 0px 0px;
+  margin: -90px 0px 0px 0px;
 }
 .modal-fourth__exit {
   color: #FF2500;
@@ -1063,9 +1062,86 @@ h1, h2, h3, h4, h5, h6 {
 .modal-fourth__student-mins-default-svg {
   margin: 0px 0px 2px 3px;
 }
+.modal-fourth__lesson-state {
+  margin: 0px 0px 20px 0px;
+}
 .modal-fourth__lesson-state-label {
   margin: 26px 0px 8px 0px;
 }
+.modal-fourth__lesson-state-box {
+  padding: 0px 0px 0px 8px;
+  width: 363px;
+  height: 33px;
+  background: #F5E6FE;
+  border: 1px solid #AAAAAA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-fourth__lesson-state-circle {
+  margin: 0px 12px 0px 0px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #A1F9CF;
+}
+.modal-fourth__lesson-state-text {
+  width: 231px;
+  margin: 0px 68px 0px 0px;
+}
+.modal-fourth__btns {
+  margin: 45px 0px 0px 0px;
+  width: 362px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+}
+.modal-fourth__btn {
+  width: 164px;
+  height: 40px;
+  border: 2px solid #235390;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #235390;
+}
+.modal-fourth__btn-2 {
+  width: 164px;
+  height: 40px;
+  background: #235390;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+}
+
 body {
   height: 100%;
   min-height: 100vh;

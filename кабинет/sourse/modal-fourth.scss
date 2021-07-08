@@ -8,7 +8,7 @@
 	width: 551px;
 	height: 382px; 
     padding: 23px 0px 17.23px 0px;
-    margin: 1150px 0px 0px 0px;
+    margin: 1150px 0px 300px 0px;
 
     @media (min-width: 320px)  {
 
@@ -54,8 +54,7 @@
 
         &-2{
             width: 110%;
-            border-bottom: 1px solid #FFFFFF;
-            margin: 485px 0px 0px 0px;
+            margin: -90px 0px 0px 0px;
         }
     }
 
@@ -253,7 +252,7 @@
     }
 
 	&__lesson-state {
-
+        margin: 0px 0px 20px 0px;
 	}
 
 	&__lesson-state-label {
@@ -261,14 +260,62 @@
 	}
 
 	&__lesson-state-box {
+       padding: 0px 0px 0px 8px;
+        width: 363px;
+        height: 33px;
+  
+        background: #F5E6FE;
+        border: 1px solid #AAAAAA;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
 	}
 
 	&__lesson-state-circle {
+        margin: 0px 12px 0px 0px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+       
+        background-color: #A1F9CF;
 	}
 
 	&__lesson-state-text {
+        width: 231px;
+        margin: 0px 68px 0px 0px;
 	}
 
-	&__btn {
+	&__btns {
+        margin: 45px 0px 0px 0px;
+        width: 362px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+	}
+
+    &__btn {
+        width: 164px;
+        height: 40px;
+        border: 2px solid #235390;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #235390;
+	}
+
+    &__btn-2 {
+        width: 164px;
+        height: 40px;
+        background: #235390;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
 	}
 }
